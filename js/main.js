@@ -116,5 +116,7 @@ $( document ).ready(function() {
     $('#photo').fadeIn();
   });
 
+  $(".popup_video").modalVideo();
+
 });
 
