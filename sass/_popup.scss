@@ -59,4 +59,9 @@
             object-fit: contain;
         }
     }
+    &_video {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

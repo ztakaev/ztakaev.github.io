@@ -4451,6 +4451,8 @@ a {
       max-width: 100%;
       height: auto;
       object-fit: contain; }
+  .popup_video:hover {
+    cursor: pointer; }
 
 @media screen and (max-width: 1800px) {
   .services {
