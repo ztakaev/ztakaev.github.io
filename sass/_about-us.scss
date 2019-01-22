@@ -1,0 +1,57 @@
+.about-us {
+    background: #212327 url(../img/slider-bg.jpg) no-repeat bottom right;
+    &_wrap {
+        margin-top: -150px;
+        padding: 60px 0 70px 60px;
+        position: relative;
+        &::before {
+            content: "";
+            width: 10000px;
+            height: 100%;
+            position: absolute;
+            right: -100px;
+            top: 0;
+            background: #fff url(../img/about-bg.png) no-repeat center right;
+        }
+    }
+    &_title {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-family: "Montserrat";
+        font-size: 48px;
+        font-weight: 600;
+        color: #000;
+        line-height: 1em;
+        position: relative;
+        span {
+            color: #fd002a;
+        }
+        &::before {
+            content: "";
+            width: 18px;
+            height: 114px;
+            position: absolute;
+            left: -51px;
+            top: 0;
+            background: url(../img/logo-min-ver.png) no-repeat center center;
+        }
+    }
+    &_subtitle {
+        position: relative;
+        z-index: 2;
+        margin: 5px 0;
+        color: #000000;
+        font-family: "Open Sans";
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 60px;
+    }
+    &_text {
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        font-family: "Open Sans";
+        font-size: 17px;
+        line-height: 33px;
+    }
+}

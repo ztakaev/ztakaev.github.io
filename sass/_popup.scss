@@ -1,0 +1,62 @@
+.popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, .65);
+    &-modal {
+        max-height: 820px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1140px;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+    }
+    &__close {
+        font-family: 'Monterat';
+        padding: 0;
+        text-align: left;
+        width: 41px;
+        height: 41px;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: -63px;
+        top: 52px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 41px;
+        text-align: center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__imgs {
+        max-height: 656px;
+        overflow: hidden auto;
+        padding: 55px 95px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__img {
+        display: block;
+        padding: 25px 75px;
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #eaecec;
+        max-height: 272px;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}

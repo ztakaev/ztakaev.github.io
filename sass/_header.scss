@@ -1,0 +1,38 @@
+.header {
+    padding-bottom: 278px;
+    background: #000 url(../img/header_bg.jpg) no-repeat center top / cover;
+    .nav {
+        padding-top: 50px;
+    }
+    .logo {
+        display: block;
+    }
+    &_title {
+        margin-top: 75px;
+        color: #fff;
+        font-family: "Montserrat";
+        font-size: 150px;
+        line-height: 130px;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: -7.5px;
+        position: relative;
+        .first {
+            display: block;
+            font-weight: 200;
+            letter-spacing: -7.5px;
+        }
+        span {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    &_info {
+        margin-top: 45px;
+        color: #b8babd;
+        width: 80%;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+}

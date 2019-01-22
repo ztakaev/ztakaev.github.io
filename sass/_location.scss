@@ -1,0 +1,38 @@
+.location {
+    position: relative;
+    padding-top: 220px;
+    height: 886px;
+    background: url(../img/loc-bg.jpg) no-repeat center top / cover;
+    .container {
+        position: relative;
+    }
+    &_title {
+        font-family: "Montserrat";
+        .first {
+            span {
+                display: block;
+                color: #fff;
+                font-size: 72px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: -3.6px;
+                position: relative;
+                z-index: 2;
+                line-height: 0.79em;
+                margin-bottom: 7px;
+            }
+            position: relative;
+        }
+        span {
+            text-transform: uppercase;
+            color: #717377;
+            font-size: 55px;
+            font-weight: 200;
+            letter-spacing: -2.75px;
+        }
+        .remband {
+            bottom: 0;
+            top: auto;
+        }
+    } 
+}

@@ -1,0 +1,27 @@
+body {
+    font-family: "Open Sans";
+    color: #383b3f;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    outline: none;
+}
+
+.remband {
+    z-index: 1;
+    position: absolute;
+    width: 1033px;
+    height: 19px;
+    background: #050707 url(../img/remband.png) no-repeat center right;
+    left: -60px;
+    top: 102px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,110 @@
+.portfolio {
+    padding: 48px 25px 42px 165px;
+    background-color: #fff;
+    height: 100%;
+    transition: .5s;
+    &:hover {
+        box-shadow: 0 19px 32px rgba(8, 31, 47, 0.14);
+    }
+    &__wrap {
+        margin-bottom: 35px;
+        display: flex;
+        align-items: flex-start;
+        &_full {
+            margin-bottom: 0;
+        }
+    }
+    &__quantity {
+        margin-right: 27px;
+        color: #fd002a;
+        font-family: "Montserrat";
+        font-size: 80px;
+        font-weight: 300;
+        letter-spacing: -2px;
+        line-height: 0.75em;
+        position: relative;
+    }
+    &__name {
+        color: #000000;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.6px;
+    }
+    &__category {
+        font-size: 17px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    &_popup {
+        padding-left: 225px;
+        padding-right: 90px;
+        background-color: #f7f8f8;
+        &:hover {
+            box-shadow: none;
+        }
+    }
+    &__type {
+        position: relative;
+        &::before {
+            position: absolute;
+            left: -28px;
+            top: -19.5px;
+            content: '';
+            height: 97px;
+            width: 1px;
+            background-color: #e9e9ee;
+        }
+        &::after {
+            position: absolute;
+            left: -130px;
+            top: 50%;
+            transform: translateY(-50%);
+            content: '';
+            height: 75px;
+            width: 75px;
+            background-position: center center;
+            background-repeat: no-repeat; 
+        }
+        &_landing {
+            &::after {
+                background-image: url(../img/icons/landing-icon.png);
+            }
+        }
+        &_ico {
+            &::after {
+                background-image: url(../img/icons/ico-icon.png);
+            }
+        }
+        &_store {
+            &::after {
+                background-image: url(../img/icons/store-icon.png);
+            }
+        }
+        &_content {
+            &::after {
+                background-image: url(../img/icons/content-icon.png);
+            }
+        }
+        &_product {
+            &::after {
+                background-image: url(../img/icons/product-icon.png);
+            }
+        }
+        &_sticker {
+            &::after {
+                background-image: url(../img/icons/sticker-icon.png);
+            }
+        }
+        &_photo {
+            &::after {
+                background-image: url(../img/icons/photo-icon.png);
+            }
+        }
+        &_video {
+            &::after {
+                background-image: url(../img/icons/video-icon.png);
+            }
+        }
+    }
+}

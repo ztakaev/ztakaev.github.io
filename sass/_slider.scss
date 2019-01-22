@@ -1,0 +1,41 @@
+.slider {
+    position: relative;
+    padding: 30px 0;
+    .arrows {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+    }
+    .arrow {
+        z-index: 2;
+        width: 65px;
+        height: 64px;
+        background-color: #34363bab;
+        border-radius: 50%;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        &__left {
+            left: -50px;
+            background-image: url(../img/arrow-left.png);
+        }
+        &__right {
+            right: -50px;
+            background-image: url(../img/arrow-right.png);
+        }
+        &:hover {
+            background-color: #34363b;
+            cursor: pointer;
+        }   
+    }
+    .slick-slide {
+        opacity: .2;
+    }
+    .slick-active {
+        opacity: 1;
+    }
+}

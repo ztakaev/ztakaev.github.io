@@ -1,0 +1,361 @@
+@media screen and (max-width: 1800px) { 
+    .services {
+        overflow-x: hidden;
+        &::before {
+            right: -200px;
+        }
+        &::after { 
+            background-size: contain;
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .about-us_wrap {
+        &::before {
+            display: none;
+        }
+    }
+    .wrap {
+        background: #fff url(../img/about-bg.png) no-repeat center right;
+    }
+    .slider {
+        .arrow{
+            &__right {
+                right: 0;
+            }
+            &__left {
+                left: 0;
+            }
+        }
+    }
+    .services {
+        &::before, &::after {
+            display: none;
+        }
+    }
+
+    .popup-modal {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .remband {
+        width: 100%;
+    }
+    .portfolio {
+        padding-left: 150px;
+        &__quantity {
+            font-size: 65px;
+            margin-right: 15px;
+        }
+        &__name {
+            font-size: 20px;
+        }
+        &__category {
+            font-size: 14px;
+        }
+    }
+    .location {
+        background-position: -700px top;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .popup {
+        &-modal {
+            width: 720px;
+            .portfolio__quantity  {
+                font-size: 54px;
+            }
+            .btn {
+                min-width: 205px;
+            }
+        }
+        &__img {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header_title {
+        font-size: 90px;
+        .remband {
+            top: 80px;
+        }
+    }
+    .contacts {
+        padding-left: 20px;
+        &__number {
+            font-size: 16px;
+        }
+    }
+    .services {
+        overflow-x: hidden;
+    }
+    .portfolio {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        &__wrap {
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+    .btn {
+        min-width: 195px;
+    }
+    .location {
+        height: 800px;
+        background-position-x: -900px;
+        &_title .first span {
+            font-size: 57px;
+        }
+        &_title span {
+            font-size: 44px;
+        }
+    }
+    .brands__item {
+        padding: 10px;
+    }
+    .slider {
+        .slick-slide {
+            opacity: 1;
+        }
+    }
+    .work {
+        height: 500px;
+        &__title {
+            margin-top: 300px;
+        }
+    }
+    .popup {
+        &-modal {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            max-height: none;
+        }
+        &__imgs {
+            padding: 0 10px;
+            background-color: #fff;
+            overflow: initial;
+        }
+        &__img {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        &__close {
+            right: 10px;
+            top: 10px;
+            font-size: 60px;
+            color: #000;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding-bottom: 220px;
+        .nav {
+            padding-top: 20px;
+        }
+        &_title {
+            line-height: 70px;
+        }
+    }
+    .contacts {
+        margin-top: 10px;
+        flex-direction: column;
+        &__el {
+            flex-direction: row;
+            margin-bottom: 8px;
+        }
+        &__city {
+            margin-left: 10px;
+        }
+    }
+    .remband {
+        display: none;
+    }
+    .services {
+        &-title {
+            font-size: 45px;
+        }
+        article {
+            margin-bottom: 50px;
+        }
+        &-icon {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .portfolio {
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        &__wrap_full {
+            display: block;
+            .portfolio__quantity {
+                float: left;
+            }
+        }
+        .btn {
+            margin-top: 40px;
+        }
+    }
+    .partners_title {
+        background: none;
+        font-size: 38px;
+        padding-left: 20px;
+    }
+    .footer {
+        .contacts__number {
+            font-size: 12px;
+        }
+    }
+    .location {
+        height: 600px;
+        background-position-x: -600px;
+        &_title .first span {
+            font-size: 50px!important;
+        }
+        &_title span {
+            font-size: 38px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contacts {
+        padding-left: 0;
+        &__el {
+            flex-direction: column;
+        }
+    }
+    .header {
+        padding-bottom: 190px;
+        &_title {
+            margin-top: 50px;
+            font-size: 68px;
+        }
+        &_info {
+            margin-top: 30px;
+        }
+    }
+    .about-us {
+        &_wrap {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        &_title {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        &_text {
+            font-size: 14px;
+        }
+        &_subtitle {
+            line-height: 38px;
+        }
+    }
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+    .location {
+        height: 490px;
+        background-position-y: 70px;
+        &_title .first span {
+            font-size: 35px!important;
+        }
+        &_title span {
+            font-size: 25px;
+        }
+    }
+    .services {
+        padding-bottom: 420px;
+        &-title {
+            line-height: 34px;
+            font-size: 27px;
+        }
+        &-desc {
+            margin-top: 10px;
+        }
+    }
+    .partners {
+        margin-top: -690px;
+        margin-bottom: 35px;
+        .container {
+            padding: 20px 0;
+        }
+        &_title {
+            font-size: 28px;
+        }
+    }
+    .brands__item {
+        flex: 1 1 33%;
+    }
+    .portfolio {
+        margin-bottom: 30px;
+        &__name {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__wrap {
+            flex-direction: column;
+        }
+        .btn {
+            margin-left: -130px;
+        }
+        &__quantity {
+            font-size: 45px;
+            margin-bottom: 15px;
+        } 
+    }
+    .portfolio__wrap_full {
+        .portfolio__quantity {
+            float: none;
+        }
+        .portfolio__type {
+            margin-top: 15px!important;
+        }
+    }
+    .popup {
+        &-modal {
+            max-height: none;
+        }
+        &__imgs {
+            overflow: initial;
+        }
+        &__img {
+            width: 100%;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px) { 
+    .work {
+        background-size: cover;
+        margin: 0;
+        &__category {
+            margin-left: -40px;
+        }
+    }
+    .slider {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
