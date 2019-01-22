@@ -4454,6 +4454,15 @@ a {
   .popup_video:hover {
     cursor: pointer; }
 
+.lb-outerContainer {
+  width: auto !important;
+  max-width: 80% !important;
+  height: auto; }
+
+.lb-image {
+  width: 100% !important;
+  height: auto !important; }
+
 @media screen and (max-width: 1800px) {
   .services {
     overflow-x: hidden; }
@@ -4714,6 +4723,10 @@ a {
 
   .slider {
     padding-left: 30px;
-    padding-right: 30px; } }
+    padding-right: 30px; }
+
+  .lb-outerContainer {
+    width: 90% !important;
+    max-width: 90% !important; } }
 
 /*# sourceMappingURL=main.css.map */
