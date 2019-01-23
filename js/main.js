@@ -115,6 +115,10 @@ $( document ).ready(function() {
     e.preventDefault();
     $('#photo').fadeIn();
   });
+  $('#corporateBtn').click(function(e) {
+    e.preventDefault();
+    $('#corporate').fadeIn();
+  });
 
   //$(".popup_video").modalVideo();
 

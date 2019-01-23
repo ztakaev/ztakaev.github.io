@@ -76,6 +76,11 @@
                 background-image: url(../img/icons/ico-icon.png);
             }
         }
+        &_corporate {
+            &::after {
+                background-image: url(../img/icons/corporate-icon.png);
+            }
+        }
         &_store {
             &::after {
                 background-image: url(../img/icons/store-icon.png);

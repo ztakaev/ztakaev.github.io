@@ -4131,6 +4131,8 @@ a {
       background-image: url(../img/icons/landing-icon.png); }
     .portfolio__type_ico::after {
       background-image: url(../img/icons/ico-icon.png); }
+    .portfolio__type_corporate::after {
+      background-image: url(../img/icons/corporate-icon.png); }
     .portfolio__type_store::after {
       background-image: url(../img/icons/store-icon.png); }
     .portfolio__type_content::after {
