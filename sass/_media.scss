@@ -270,9 +270,12 @@
     .contacts {
         display: flex;
         flex-direction: column;
+        &__el {
+            margin-bottom: 3px;
+        }
     }
     .location {
-        height: 490px;
+        height: 475px;
         background-position-y: 70px;
         &_title .first span {
             font-size: 35px!important;
@@ -361,5 +364,12 @@
     .lb-outerContainer {
         width: 90%!important;
         max-width: 90%!important;
+    }
+    .header {
+        .contacts {
+            &__number {
+                font-size: 14px;
+            }
+        }
     }
 }
