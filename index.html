@@ -31,14 +31,18 @@
         * {
             box-sizing: border-box;
         }
-        body {
+        .mask {
+            width: 100%;
+            height: auto;
+        }
+        .info-cont {
             font-family: "Helvetica Neue";
             font-weight: 400;
             padding: 0;
             margin: 0;
             color: #000;
         }
-        p {
+        .info-cont p {
             margin: 0;
             color: #3f454b;
             font-size: 13px;
@@ -46,35 +50,35 @@
             letter-spacing: 0.6px;
             line-height: 17px;
         }
-        h1,h2,h3 {
+        .info-cont h1,h2,h3 {
             margin: 0;
         }
-        h2 {
+        .info-cont h2 {
             margin-bottom: 34px;
             color: #3f454b;
             font-weight: 100;
             font-size: 25px;
             letter-spacing: 1.25px;
         }
-        h2 span {
+        .info-cont h2 span {
             color: #92d050;
             letter-spacing: 1.25px;
         }
-        .container {
+        .info-cont .container {
             width: 688px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        .header {
+        .info-cont .header {
             padding-top: 35px;
             margin-bottom: 18px;
             text-align: center;
         }
-        .header_logo {
+        .info-cont .header_logo {
             display: block;
             margin-bottom: 40px;
         }
-        .header_title {
+        .info-cont .header_title {
             margin-bottom: 15px;
             color: #92d050;
             font-size: 24px;
@@ -82,25 +86,25 @@
             color: #92d050;
             letter-spacing: 1.2px;
         }
-        .header_advantages {
+        .info-cont .header_advantages {
             line-height: 24px;
             margin-bottom: 25px;
             font-size: 20px;
             font-weight: 100;
             letter-spacing: 1px;
         }
-        .header_desc {
+        .info-cont .header_desc {
             padding: 0 25px;
             position: relative;
             color: #798088;
             font-size: 13px;
             font-weight: 400;
         }
-        .header_desc span {
+        .info-cont .header_desc span {
             color: #92d050;
             letter-spacing: 0.65px;
         }
-        .header_desc::before {
+        .info-cont .header_desc::before {
             content: "";
             position: absolute;
             left: 50%;
@@ -110,66 +114,66 @@
             height: 9px;
             background-color: #92d050;
         }
-        .header_bg {
+        .info-cont .header_bg {
             margin-bottom: 40px;
             background: #002745 url(img/header_bg.jpg) no-repeat center top / cover;
-            height: 465px;
+            /*height: 465px;*/
         }
-        .product .container {
+        .info-cont .product .container {
             padding: 40px 0 27px 55px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .product_info {
+        .info-cont .product_info {
             margin-right: 30px;
         }
-        .product_desc {
+        .info-cont .product_desc {
             margin-bottom: 20px;
         }
-        .product_note {
+        .info-cont .product_note {
             color: #798088;
             font-size: 10px;
             font-weight: 100;
             font-style: italic;
             letter-spacing: 0.5px;
         }
-        .advantages .container {
+        .info-cont .advantages .container {
             padding: 75px 0;
             display: flex;
             justify-content: flex-end;
         }
-        .advantages__bg1 {
+        .info-cont .advantages__bg1 {
             background: #002745 url(img/section1_bg.jpg) no-repeat center top / cover;
         }
-        .advantages__bg2 {
+        .info-cont .advantages__bg2 {
             background: #002745 url(img/section2_bg.jpg) no-repeat center top / cover;
         }
-        .advantages_block {
+        .info-cont .advantages_block {
             padding: 36px 34px 40px 20px;
             width: 235px; 
             background-color: #fff;
             margin-right: 20px;
         }
-        .advantages_title {
+        .info-cont .advantages_title {
             margin-bottom: 25px;
         }
-        .equipment {
+        .info-cont .equipment {
             padding-top: 45px;
         }
-        .equipment_list {
+        .info-cont .equipment_list {
             padding-left: 200px;
             margin: 0 auto;
         }
-        .equipment_item {
+        .info-cont .equipment_item {
             width: 367px;
             position: relative;
             margin-bottom: 70px;
         }
-        .equipment_item:last-child::before {
+        .info-cont .equipment_item:last-child::before {
             display: none;
         }
-        .equipment_item::before {
+        .info-cont .equipment_item::before {
             content: "";
             position: absolute;
             left: 0;
@@ -178,7 +182,7 @@
             height: 1px;
             background-color: #92d050;
         }
-        .equipment_item::after {
+        .info-cont .equipment_item::after {
             content: "";
             position: absolute;
             left: -128px;
@@ -188,213 +192,256 @@
             background-position: center center;
             background-repeat: no-repeat;
         }
-        .equipment_item__1::after {
+        .info-cont .equipment_item__1::after {
             background-image: url(img/icon-1.png);
         }
-        .equipment_item__2::after {
+        .info-cont .equipment_item__2::after {
             background-image: url(img/icon-2.png);
         }
-        .equipment_item__3::after {
+        .info-cont .equipment_item__3::after {
             background-image: url(img/icon-3.png);
         }
-        .equipment_item__4::after {
+        .info-cont .equipment_item__4::after {
             background-image: url(img/icon-4.png);
         }
-        .equipment_item .equipment_title {
+        .info-cont .equipment_item .equipment_title {
             margin-bottom: 8px;
             font-size: 15px;
             font-weight: 700;
             letter-spacing: 0.75px;
             line-height: 17px;
         }
-        .equipment_desc {
+        .info-cont .equipment_desc {
             font-size: 13px;
             font-weight: 400;
             letter-spacing: 0.65px;
             line-height: 17px;
         }
-
+        .info-cont .advantages_block__mob, .info-cont .advantages .container__mob {
+            display: none;
+        }
         @media screen and (max-width: 688px) {
-            .container {
+            .info-cont .container {
                 width: 575px;
             }
-            .equipment_list {
+            .info-cont .equipment_list {
                 padding-left: 150px;
             }
-            .product_title, .advantages_title {
+            .info-cont .product_title, .advantages_title {
                 margin-bottom: 12px;
             }
-            .header_title {
+            .info-cont .header_title {
                 font-size: 20px;
             }
-            .header_advantages {
+            .info-cont .header_advantages {
                 font-size: 18px;
             }
-            .header_bg {
+            .info-cont .header_bg {
                 margin-bottom: 25px;
             }
         }
         @media screen and (max-width: 575px) {
-            .container {
+            .info-cont .container {
                 width: 100%;
             }
-            .product .container {
+            .info-cont .product .container {
                 flex-wrap: wrap;
             }
-            .product_info {
+            .info-cont .product_info {
                 width: 100%;
             }
-            .product_img img {
+            .info-cont .product_img img {
                 max-width: 100%;
                 height: auto;
             }
-            .equipment_item {
+            .info-cont .equipment_item {
                 width: 100%;
             }
-            .equipment_item::after {
+            .info-cont .equipment_item::after {
                 left: -100px;
                 width: 70px;
                 height: 70px;
                 background-size: cover;
             }
-            .equipment_list {
+            .info-cont .equipment_list {
                 padding-left: 100px;
             }
-            .equipment_item__4 {
+            .info-cont .equipment_item__4 {
                 margin-bottom: 40px;
+            }
+            .info-cont .advantages_block {
+                display: none;
+            }
+            .info-cont .advantages_block__mob {
+                display: block;
+                padding: 20px 15px 0 55px;
+            }
+            .info-cont .advantages_block__mob .advantages_title {
+                margin-bottom: 10px;
+            }
+            .info-cont .advantages .container__mob {
+                display: block;
+                padding: 0;
             }
         }
     </style>
 </head>
 <body>
-    <header class="header" id="header">
-        <div class="container">
-            <a href="/" class="header_logo">
-                <img src="img/logo.png" alt="">
-            </a>
-            <h1 class="header_title">
-                Погружной блендер Braun Multiquick 9 MQ9037X
-            </h1>
-            <p class="header_advantages">
-                Движущиеся ножи. <br>
-                Измельчение до последней крошки
-            </p>
-        </div>
-        <div class="container">
-            <div class="header_bg">
-                <img src="" class="mask">
-            </div>
-        </div>
-        <div class="container">
-            <p class="header_desc">
-                <span>Braun MQ9037X</span> – инновационный блендер от Braun c уникальной технологией ACTIVEBlade. Этот удобный,
-                высокопроизводительный блендер способен без труда измельчить даже самые твёрдые продукты. В комплект 
-                входит 4 насадки, расширяющих его возможности.  
-            </p>
-        </div>
-    </header>
-
-    <section class="product">
-        <div class="container">
-            <div class="product_info">
-                <h2 class="product_title">
-                        Уникальная технология 
-                        измельчения <span>ACTIVEBlade</span>
-                </h2>
-                <p class="product_desc">
-                    Уникальные лезвия ACTIVEBlade двигаются вверх и вниз,
-                    чтобы без труда измельчать твердые продукты прикладывая на 40% меньше усилий*,
-                    ножи опускаются до конца купола, захватывая самые мелкие части продукта и обеспечивая
-                    однородное измельчение без ненужных остатков.   
+    <div class="info-cont">
+        <header class="header" id="header">
+            <div class="container">
+                <a href="/" class="header_logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <h1 class="header_title">
+                    Погружной блендер Braun Multiquick 9 MQ9037X
+                </h1>
+                <p class="header_advantages">
+                    Движущиеся ножи. <br>
+                    Измельчение до последней крошки
                 </p>
-                <span class="product_note">* По сравнению с блендерами Braun без ACTIVEBlade.</span>
             </div>
-            <div class="product_img">
-                <img src="img/active-blade.png">
+            <div class="container">
+                <div class="header_bg">
+                    <img src="img/mask.png" class="mask">
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="container">
+                <p class="header_desc">
+                    <span>Braun MQ9037X</span> – инновационный блендер от Braun c уникальной технологией ACTIVEBlade. Этот удобный,
+                    высокопроизводительный блендер способен без труда измельчить даже самые твёрдые продукты. В комплект 
+                    входит 4 насадки, расширяющих его возможности.  
+                </p>
+            </div>
+        </header>
 
-    <section class="advantages">
-        <div class="container advantages__bg1">
-            <div class="advantages_block">
-                <h2 class="advantages_title">
-                    Продуманная 
-                    конструкция <br>
-                    <span>POWERBellPlus</span>
-                </h2>
-                <p class="advantages_desc">
+        <section class="product">
+            <div class="container">
+                <div class="product_info">
+                    <h2 class="product_title">
+                            Уникальная технология 
+                            измельчения <span>ACTIVEBlade</span>
+                    </h2>
+                    <p class="product_desc">
+                        Уникальные лезвия ACTIVEBlade двигаются вверх и вниз,
+                        чтобы без труда измельчать твердые продукты прикладывая на 40% меньше усилий*,
+                        ножи опускаются до конца купола, захватывая самые мелкие части продукта и обеспечивая
+                        однородное измельчение без ненужных остатков.   
+                    </p>
+                    <span class="product_note">* По сравнению с блендерами Braun без ACTIVEBlade.</span>
+                </div>
+                <div class="product_img">
+                    <img src="img/active-blade.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container advantages__bg1">
+                <div class="advantages_block">
+                    <h2 class="advantages_title">
+                        Продуманная 
+                        конструкция <br>
+                        <span>POWERBellPlus</span>
+                    </h2>
+                    <p class="advantages_desc">
                         Дополнительное дробящее лезвие позволяет более быстро и эффективно измельчать,
                         а также смешивать большие куски пищи с меньшими усилиями благодаря увеличенной зоне для измельчения.   
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="product">
-        <div class="container">
-            <div class="product_info">
-                <h2 class="product_title">
-                    Технология <span>SmartSpeed</span>
-                </h2>
-                <p class="product_desc">
-                    Без заданных настроек скорости - просто доверьтесь своей интуиции.
-                    Управляйте скоростью, нажимая на кнопку, и получайте желаемые результаты.
-                </p>
-            </div>
-            <div class="product_img">
-                <img src="img/smartspeed.png">
-            </div>
-        </div>
-    </section>
-
-    <section class="advantages">
-        <div class="container advantages__bg2">
-            <div class="advantages_block">
-                <h2 class="advantages_title">
-                    Мощный 
-                    двигатель <br>
-                    <span>1000 W</span>
-                </h2>
-                <p class="advantages_desc">
-                    Усовершенствованная технология двигателя автоматически адаптирует мощность к вашим потребностям:
-                    обеспечивает максимальную при работе со сложными продуктами и экономит энергию, когда в ней нет необходимости.    
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="equipment">
-        <div class="container">
-            <div class="equipment_list">
-                <h2 class="equipment_title">Комплектация</h2>
-                <article class="equipment_item equipment_item__1">
-                    <h3 class="equipment_title">Измельчитель 500мл</h3>
-                    <p class="equipment_desc">
-                        Идеально подходит для измельчения небольших мяса, рыбы, зеленьи, лука, твердый сыр, моркови и тд 
                     </p>
-                </article>
-                <article class="equipment_item equipment_item__2">
-                    <h3 class="equipment_title">Насадка для приготовления пюре</h3>
-                    <p class="equipment_desc">
-                        Легко и быстро сделайте однородное картофельное пюре без комочков.    
-                    </p>
-                </article>
-                <article class="equipment_item equipment_item__3">
-                    <h3 class="equipment_title">Венчик</h3>
-                    <p class="equipment_desc">
-                        Легко взбивает, белки, омлет, сливки и воздушные десерты как на низкой, так и на высокой скорости.   
-                    </p>
-                </article>
-                <article class="equipment_item equipment_item__4">
-                    <h3 class="equipment_title">Пластиковый стакан 600 мл</h3>
-                    <p class="equipment_desc">
-                        Не содержит бисфенола А и имеет отметки как в унциях, так и в миллилитрах.      
-                    </p>
-                </article>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="container container__mob">
+                <div class="advantages_block advantages_block__mob">
+                    <h2 class="advantages_title">
+                        Продуманная 
+                        конструкция <br>
+                        <span>POWERBellPlus</span>
+                    </h2>
+                    <p class="advantages_desc">
+                        Дополнительное дробящее лезвие позволяет более быстро и эффективно измельчать,
+                        а также смешивать большие куски пищи с меньшими усилиями благодаря увеличенной зоне для измельчения.   
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="product">
+            <div class="container">
+                <div class="product_info">
+                    <h2 class="product_title">
+                        Технология <span>SmartSpeed</span>
+                    </h2>
+                    <p class="product_desc">
+                        Без заданных настроек скорости - просто доверьтесь своей интуиции.
+                        Управляйте скоростью, нажимая на кнопку, и получайте желаемые результаты.
+                    </p>
+                </div>
+                <div class="product_img">
+                    <img src="img/smartspeed.png">
+                </div>
+            </div>
+        </section>
 
+        <section class="advantages">
+            <div class="container advantages__bg2">
+                <div class="advantages_block">
+                    <h2 class="advantages_title">
+                        Мощный 
+                        двигатель <br>
+                        <span>1000 W</span>
+                    </h2>
+                    <p class="advantages_desc">
+                        Усовершенствованная технология двигателя автоматически адаптирует мощность к вашим потребностям:
+                        обеспечивает максимальную при работе со сложными продуктами и экономит энергию, когда в ней нет необходимости.    
+                    </p>
+                </div>
+            </div>
+            <div class="container container__mob">
+                <div class="advantages_block advantages_block__mob">
+                    <h2 class="advantages_title">
+                        Мощный 
+                        двигатель <br>
+                        <span>1000 W</span>
+                    </h2>
+                    <p class="advantages_desc">
+                        Усовершенствованная технология двигателя автоматически адаптирует мощность к вашим потребностям:
+                        обеспечивает максимальную при работе со сложными продуктами и экономит энергию, когда в ней нет необходимости.    
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipment">
+            <div class="container">
+                <div class="equipment_list">
+                    <h2 class="equipment_title">Комплектация</h2>
+                    <article class="equipment_item equipment_item__1">
+                        <h3 class="equipment_title">Измельчитель 500мл</h3>
+                        <p class="equipment_desc">
+                            Идеально подходит для измельчения небольших мяса, рыбы, зеленьи, лука, твердый сыр, моркови и тд 
+                        </p>
+                    </article>
+                    <article class="equipment_item equipment_item__2">
+                        <h3 class="equipment_title">Насадка для приготовления пюре</h3>
+                        <p class="equipment_desc">
+                            Легко и быстро сделайте однородное картофельное пюре без комочков.    
+                        </p>
+                    </article>
+                    <article class="equipment_item equipment_item__3">
+                        <h3 class="equipment_title">Венчик</h3>
+                        <p class="equipment_desc">
+                            Легко взбивает, белки, омлет, сливки и воздушные десерты как на низкой, так и на высокой скорости.   
+                        </p>
+                    </article>
+                    <article class="equipment_item equipment_item__4">
+                        <h3 class="equipment_title">Пластиковый стакан 600 мл</h3>
+                        <p class="equipment_desc">
+                            Не содержит бисфенола А и имеет отметки как в унциях, так и в миллилитрах.      
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
