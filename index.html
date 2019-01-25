@@ -1,1169 +1,400 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="format-detection" content="telephone=no">
-	<title>Rembrand</title>
-	<link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Braun</title>
+
+    <style>
+        @font-face {
+            font-family: "Helvetica Neue";
+            font-weight: 400;
+            font-style: normal; 
+            src: url("fonts/HelveticaNeueCyr-Roman.eot");
+            src: url("fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            font-weight: 700;
+            font-style: normal; 
+            src: url("fonts/HelveticaNeueCyr-Bold.eot");
+            src: url("fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "Helvetica Neue";
+            font-weight: 100;
+            font-style: normal; 
+            src: url("fonts/HelveticaNeueCyr-Thin.eot");
+            src: url("fonts/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeueCyr-Thin.woff") format("woff"), url("fonts/HelveticaNeueCyr-Thin.ttf") format("truetype");
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Helvetica Neue";
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            color: #000;
+        }
+        p {
+            margin: 0;
+            color: #3f454b;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.6px;
+            line-height: 17px;
+        }
+        h1,h2,h3 {
+            margin: 0;
+        }
+        h2 {
+            margin-bottom: 34px;
+            color: #3f454b;
+            font-weight: 100;
+            font-size: 25px;
+            letter-spacing: 1.25px;
+        }
+        h2 span {
+            color: #92d050;
+            letter-spacing: 1.25px;
+        }
+        .container {
+            width: 688px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header {
+            padding-top: 35px;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+        .header_logo {
+            display: block;
+            margin-bottom: 40px;
+        }
+        .header_title {
+            margin-bottom: 15px;
+            color: #92d050;
+            font-size: 24px;
+            font-weight: 700;
+            color: #92d050;
+            letter-spacing: 1.2px;
+        }
+        .header_advantages {
+            line-height: 24px;
+            margin-bottom: 25px;
+            font-size: 20px;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+        .header_desc {
+            padding: 0 25px;
+            position: relative;
+            color: #798088;
+            font-size: 13px;
+            font-weight: 400;
+        }
+        .header_desc span {
+            color: #92d050;
+            letter-spacing: 0.65px;
+        }
+        .header_desc::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -25px;
+            transform: translateX(-50%);
+            width: 85px;
+            height: 9px;
+            background-color: #92d050;
+        }
+        .header_bg {
+            margin-bottom: 40px;
+            background: #002745 url(img/header_bg.jpg) no-repeat center top / cover;
+            height: 465px;
+        }
+        .product .container {
+            padding: 40px 0 27px 55px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product_info {
+            margin-right: 30px;
+        }
+        .product_desc {
+            margin-bottom: 20px;
+        }
+        .product_note {
+            color: #798088;
+            font-size: 10px;
+            font-weight: 100;
+            font-style: italic;
+            letter-spacing: 0.5px;
+        }
+        .advantages .container {
+            padding: 75px 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .advantages__bg1 {
+            background: #002745 url(img/section1_bg.jpg) no-repeat center top / cover;
+        }
+        .advantages__bg2 {
+            background: #002745 url(img/section2_bg.jpg) no-repeat center top / cover;
+        }
+        .advantages_block {
+            padding: 36px 34px 40px 20px;
+            width: 235px; 
+            background-color: #fff;
+            margin-right: 20px;
+        }
+        .advantages_title {
+            margin-bottom: 25px;
+        }
+        .equipment {
+            padding-top: 45px;
+        }
+        .equipment_list {
+            padding-left: 200px;
+            margin: 0 auto;
+        }
+        .equipment_item {
+            width: 367px;
+            position: relative;
+            margin-bottom: 70px;
+        }
+        .equipment_item:last-child::before {
+            display: none;
+        }
+        .equipment_item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -35px;
+            width: 129px;
+            height: 1px;
+            background-color: #92d050;
+        }
+        .equipment_item::after {
+            content: "";
+            position: absolute;
+            left: -128px;
+            bottom: 0;
+            width: 100px;
+            height: 100px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .equipment_item__1::after {
+            background-image: url(img/icon-1.png);
+        }
+        .equipment_item__2::after {
+            background-image: url(img/icon-2.png);
+        }
+        .equipment_item__3::after {
+            background-image: url(img/icon-3.png);
+        }
+        .equipment_item__4::after {
+            background-image: url(img/icon-4.png);
+        }
+        .equipment_item .equipment_title {
+            margin-bottom: 8px;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.75px;
+            line-height: 17px;
+        }
+        .equipment_desc {
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.65px;
+            line-height: 17px;
+        }
+
+        @media screen and (max-width: 688px) {
+            .container {
+                width: 575px;
+            }
+            .equipment_list {
+                padding-left: 150px;
+            }
+            .product_title, .advantages_title {
+                margin-bottom: 12px;
+            }
+            .header_title {
+                font-size: 20px;
+            }
+            .header_advantages {
+                font-size: 18px;
+            }
+            .header_bg {
+                margin-bottom: 25px;
+            }
+        }
+        @media screen and (max-width: 575px) {
+            .container {
+                width: 100%;
+            }
+            .product .container {
+                flex-wrap: wrap;
+            }
+            .product_info {
+                width: 100%;
+            }
+            .product_img img {
+                max-width: 100%;
+                height: auto;
+            }
+            .equipment_item {
+                width: 100%;
+            }
+            .equipment_item::after {
+                left: -100px;
+                width: 70px;
+                height: 70px;
+                background-size: cover;
+            }
+            .equipment_list {
+                padding-left: 100px;
+            }
+            .equipment_item__4 {
+                margin-bottom: 40px;
+            }
+        }
+    </style>
 </head>
 <body>
-	<header class="header" id="header">
-		<div class="container">
-			<nav class="nav">
-				<div class="row align-items-center justify-content-sm-between">
-					<div class="col-sm-3 col-5 order-1 order-sm-1 order-md-1">
-						<a href="/" class="logo">
-							<img src="img/logo.png" alt="logo" class="img-fluid">
-						</a>
-					</div>
-					<div class="col-md-9 col-sm-auto col-7 order-2 order-sm-2 order-md-2 d-flex justify-content-end">
-						<div class="contacts">
-							<div class="contacts__el">
-								<span class="contacts__number">+7 (965)243-8603 RU</span>
-								<!-- <span class="contacts__city"></span> -->
-							</div>
-							<div class="contacts__el">
-								<span class="contacts__number">+82 10-4609-3123 KR</span>
-								<!-- <span class="contacts__city"></span> -->
-							</div>
-							<div class="contacts__el">
-								<span class="contacts__number">ms@rembrand.me</span>
-								<!-- <span class="contacts__city">Email</span> -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</nav>
+    <header class="header" id="header">
+        <div class="container">
+            <a href="/" class="header_logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <h1 class="header_title">
+                Погружной блендер Braun Multiquick 9 MQ9037X
+            </h1>
+            <p class="header_advantages">
+                Движущиеся ножи. <br>
+                Измельчение до последней крошки
+            </p>
+        </div>
+        <div class="container">
+            <div class="header_bg">
+                <img src="" class="mask">
+            </div>
+        </div>
+        <div class="container">
+            <p class="header_desc">
+                <span>Braun MQ9037X</span> – инновационный блендер от Braun c уникальной технологией ACTIVEBlade. Этот удобный,
+                высокопроизводительный блендер способен без труда измельчить даже самые твёрдые продукты. В комплект 
+                входит 4 насадки, расширяющих его возможности.  
+            </p>
+        </div>
+    </header>
 
-			<div class="header_title">
-				<span class="first">
-					Digital
-				</span>
-				<div class="remband"></div>
-				<span>Agency</span>
-			</div>
-			<p class="header_info">
-				We are a full service agency specializing in strategic marketing, its building and visualization. Using the latest trends and customized approach 
-			</p>
-		</div>
-	</header>
+    <section class="product">
+        <div class="container">
+            <div class="product_info">
+                <h2 class="product_title">
+                        Уникальная технология 
+                        измельчения <span>ACTIVEBlade</span>
+                </h2>
+                <p class="product_desc">
+                    Уникальные лезвия ACTIVEBlade двигаются вверх и вниз,
+                    чтобы без труда измельчать твердые продукты прикладывая на 40% меньше усилий*,
+                    ножи опускаются до конца купола, захватывая самые мелкие части продукта и обеспечивая
+                    однородное измельчение без ненужных остатков.   
+                </p>
+                <span class="product_note">* По сравнению с блендерами Braun без ACTIVEBlade.</span>
+            </div>
+            <div class="product_img">
+                <img src="img/active-blade.png">
+            </div>
+        </div>
+    </section>
 
-	<section class="about-us" id="about-us">
-		<div class="wrap">
-			<div class="container">
-				<div class="about-us_wrap">
-					<h3 class="about-us_title">
-							Who we are<span>?</span>	
-					</h3>
-					<p class="about-us_text">
-						We are a full service agency specializing in strategic marketing, its building and visualization.
-						Using the latest trends and customized approach to each of our clients we create products that you will be proud of.
-						We are here to help you establish an efficient business,
-						building and developing brands, attracting target audience and  increasing its loyalty. 
-					</p>
-					<h4 class="about-us_subtitle">What makes us different?</h4>
-					<p class="about-us_text">
-						Our team consists of experts in marketing, commerce, digital and creative fields,
-						which helps us to take a fresh look at old and familiar things. We are keeping up with the times,
-						reinterpreting the present and anticipating the future.
-						Every one of our works is a unique creative product which tackles a particular business goal.
-					</p>
-				</div>
-			</div>
-		</div>
+    <section class="advantages">
+        <div class="container advantages__bg1">
+            <div class="advantages_block">
+                <h2 class="advantages_title">
+                    Продуманная 
+                    конструкция <br>
+                    <span>POWERBellPlus</span>
+                </h2>
+                <p class="advantages_desc">
+                        Дополнительное дробящее лезвие позволяет более быстро и эффективно измельчать,
+                        а также смешивать большие куски пищи с меньшими усилиями благодаря увеличенной зоне для измельчения.   
+                </p>
+            </div>
+        </div>
+    </section>
 
-		<div class="slider">
-			<div class="container arrows">
-				<button class="arrow arrow__left"></button>
-				<button class="arrow arrow__right"></button>
-			</div>
-			<div class="slider-items" id="sliderWork">
-				<a href="#" class="work" style="background-image: url(img/delonghi-bg.jpg)">
-					<div class="work__category">E-commerce</div>
-					<h3 class="work__title"><img src="img/delonghi.png" class="work__logo">Content<br>production</h3>
-					<p class="work__desc">Product cards, rich content</p>
-				</a>
-	
-				<a href="#" class="work" style="background-image: url(img/braun-bg.jpg)">
-					<div class="work__category">Web development</div>
-					<h3 class="work__title"><img src="img/eldorado.png" class="work__logo">Landing page</h3>
-					<p class="work__desc">Shop-in-shop</p>
-				</a>
-	
-				<a href="#" class="work" style="background-image: url(img/ubex-bg.jpg)">
-					<div class="work__category">Web development</div>
-					<h3 class="work__title"><img src="img/ubex.png" class="work__logo">ICO project</h3>
-					<p class="work__desc">Blockchain</p>
-				</a>
+    <section class="product">
+        <div class="container">
+            <div class="product_info">
+                <h2 class="product_title">
+                    Технология <span>SmartSpeed</span>
+                </h2>
+                <p class="product_desc">
+                    Без заданных настроек скорости - просто доверьтесь своей интуиции.
+                    Управляйте скоростью, нажимая на кнопку, и получайте желаемые результаты.
+                </p>
+            </div>
+            <div class="product_img">
+                <img src="img/smartspeed.png">
+            </div>
+        </div>
+    </section>
 
-				<a href="#" class="work" style="background-image: url(img/delonghi-bg.jpg)">
-					<div class="work__category">E-commerce</div>
-					<h3 class="work__title"><img src="img/delonghi.png" class="work__logo">Content<br>production</h3>
-					<p class="work__desc">Product cards, rich content</p>
-				</a>
-	
-				<a href="#" class="work" style="background-image: url(img/braun-bg.jpg)">
-					<div class="work__category">Web development</div>
-					<h3 class="work__title"><img src="img/eldorado.png" class="work__logo">Landing page</h3>
-					<p class="work__desc">Shop-in-shop</p>
-				</a>
-	
-				<a href="#" class="work" style="background-image: url(img/ubex-bg.jpg)">
-					<div class="work__category">Web development</div>
-					<h3 class="work__title"><img src="img/ubex.png" class="work__logo">ICO project</h3>
-					<p class="work__desc">Blockchain</p>
-				</a>
+    <section class="advantages">
+        <div class="container advantages__bg2">
+            <div class="advantages_block">
+                <h2 class="advantages_title">
+                    Мощный 
+                    двигатель <br>
+                    <span>1000 W</span>
+                </h2>
+                <p class="advantages_desc">
+                    Усовершенствованная технология двигателя автоматически адаптирует мощность к вашим потребностям:
+                    обеспечивает максимальную при работе со сложными продуктами и экономит энергию, когда в ней нет необходимости.    
+                </p>
+            </div>
+        </div>
+    </section>
 
-				<a href="#" class="work" style="background-image: url(img/delonghi-bg.jpg)">
-					<div class="work__category">E-commerce</div>
-					<h3 class="work__title"><img src="img/delonghi.png" class="work__logo">Content<br>production</h3>
-					<p class="work__desc">Product cards, rich content</p>
-				</a>
-	
-				<a href="#" class="work" style="background-image: url(img/braun-bg.jpg)">
-					<div class="work__category">Web development</div>
-					<h3 class="work__title"><img src="img/eldorado.png" class="work__logo">Landing page</h3>
-					<p class="work__desc">Shop-in-shop</p>
-				</a>
-	
-				<a href="#" class="work" style="background-image: url(img/ubex-bg.jpg)">
-					<div class="work__category">Web development</div>
-					<h3 class="work__title"><img src="img/ubex.png" class="work__logo">ICO project</h3>
-					<p class="work__desc">Blockchain</p>
-				</a>
-	
-			</div>
-		</div>
-	</section>
+    <section class="equipment">
+        <div class="container">
+            <div class="equipment_list">
+                <h2 class="equipment_title">Комплектация</h2>
+                <article class="equipment_item equipment_item__1">
+                    <h3 class="equipment_title">Измельчитель 500мл</h3>
+                    <p class="equipment_desc">
+                        Идеально подходит для измельчения небольших мяса, рыбы, зеленьи, лука, твердый сыр, моркови и тд 
+                    </p>
+                </article>
+                <article class="equipment_item equipment_item__2">
+                    <h3 class="equipment_title">Насадка для приготовления пюре</h3>
+                    <p class="equipment_desc">
+                        Легко и быстро сделайте однородное картофельное пюре без комочков.    
+                    </p>
+                </article>
+                <article class="equipment_item equipment_item__3">
+                    <h3 class="equipment_title">Венчик</h3>
+                    <p class="equipment_desc">
+                        Легко взбивает, белки, омлет, сливки и воздушные десерты как на низкой, так и на высокой скорости.   
+                    </p>
+                </article>
+                <article class="equipment_item equipment_item__4">
+                    <h3 class="equipment_title">Пластиковый стакан 600 мл</h3>
+                    <p class="equipment_desc">
+                        Не содержит бисфенола А и имеет отметки как в унциях, так и в миллилитрах.      
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-	<section class="services" id="services">
-		<div class="container">
-			<article class="web">
-				<div class="services-type">
-					<div class="row">
-						<div class="col-3">
-							<img src="img/icons/web-icon.png" class="services-icon">
-						</div>
-						<div class="col-9">
-							<h2 class="services-title">
-								Web <br> development
-							</h2>
-							<p class="services-desc">
-								Optimal web-solutions for your business - the making of simple or <br>complex projects from scratch and redesigning
-								and developing the <br>existing ones. 
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-6 col-md-12">
-						<div class="portfolio">
-							<div class="portfolio__wrap">
-								<!--<span class="portfolio__quantity portfolio__quantity_landing">
-									120
-								</span>
-								-->
-								<div class="portfolio__type portfolio__type_landing">
-									<span class="portfolio__name">Landing pages</span>	
-									<p class="portfolio__category">
-										brandpage, shop-in-shop
-									</p>
-								</div>
-							</div>	
-							<a href="#" class="btn" id="landingBtn">
-								View projects
-							</a>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-12">
-						<div class="portfolio">
-							<div class="portfolio__wrap">
-								<!--<span class="portfolio__quantity portfolio__quantity_ico">
-									210
-								</span>-->
-								<div class="portfolio__type portfolio__type_ico">
-									<span class="portfolio__name">ICO projects</span>	
-									<p class="portfolio__category">
-										blockchain
-									</p>
-								</div>
-							</div>	
-							<a href="#" class="btn" id="icoBtn">
-								View projects
-							</a>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="brand">
-				<div class="services-type">
-					<div class="row">
-						<div class="col-3">
-							<img src="img/icons/brand-icon.png" class="services-icon">
-						</div>
-						<div class="col-9">
-							<h2 class="services-title">
-								Brand design 
-							</h2>
-							<p class="services-desc">
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dolores repudiandae id quisquam omnis aliquam deserunt vero,
-								 suscipit illo ea assumenda nesciunt aspernatur tempora quis adipisci sed quaerat nemo enim!
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="portfolio">
-							<div class="portfolio__wrap portfolio__wrap_full">
-								<!--<span class="portfolio__quantity portfolio__quantity_product">
-									1280
-								</span>-->
-								<div class="portfolio__type portfolio__type_corporate">
-									<span class="portfolio__name">Corporate identity</span>	
-									<p class="portfolio__category">
-										logo, packaging
-									</p>
-								</div>
-								<a href="#" class="btn btn_portfolio" id="corporateBtn">
-									View projects
-								</a>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="ecommerce">
-				<div class="services-type">
-					<div class="row">
-						<div class="col-3">
-							<img src="img/icons/ecommerce-icon.png" class="services-icon">
-						</div>
-						<div class="col-9">
-							<h2 class="services-title">
-								E-commerce
-							</h2>
-							<p class="services-desc">
-								A constant work to increase sales, conversion and forming of customers’ loyalty and prolonging the client’s life cycle
-								requires a qualified usage of content marketing strategies.
-								Content - not necessary a text - must help customers to create a feeling of gratitude and approval.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-6 col-md-12">
-						<div class="portfolio">
-							<div class="portfolio__wrap">
-								<!--<span class="portfolio__quantity portfolio__quantity_store">
-									99
-								</span>-->
-								<div class="portfolio__type portfolio__type_store">
-									<span class="portfolio__name">Banners</span>	
-									<p class="portfolio__category">
-										advertising
-									</p>
-								</div>
-							</div>	
-							<a href="#" class="btn" id="storeBtn">
-								View projects
-							</a>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-12">
-						<div class="portfolio">
-							<div class="portfolio__wrap">
-								<!--<span class="portfolio__quantity portfolio__quantity_content">
-									102
-								</span>-->
-								<div class="portfolio__type portfolio__type_content">
-									<span class="portfolio__name">Content</span>	
-									<p class="portfolio__category">
-										information
-									</p>
-								</div>
-							</div>	
-							<a href="#" class="btn" id="contentBtn">
-								View projects
-							</a>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="ecommerce">
-				<div class="services-type">
-					<div class="row">
-						<div class="col-3">
-							<img src="img/icons/digital-icon.png" class="services-icon">
-						</div>
-						<div class="col-9">
-							<h2 class="services-title">
-								Digital 
-							</h2>
-							<p class="services-desc">
-								We use all digital media outlets to cover maximum audience and to find the most efficient solutions for the
-								furthering of your business product. We design banners for social networks such as 
-								Facebook and Instagram to promote the product outside the official website.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="portfolio">
-							<div class="portfolio__wrap portfolio__wrap_full">
-								<!--<span class="portfolio__quantity portfolio__quantity_product">
-									1280
-								</span>-->
-								<div class="portfolio__type portfolio__type_product">
-									<span class="portfolio__name">Digital product</span>	
-									<p class="portfolio__category">
-										banners, reclame
-									</p>
-								</div>
-								<a href="#" class="btn btn_portfolio" id="digitalBtn">
-									View projects
-								</a>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="ecommerce">
-				<div class="services-type">
-					<div class="row">
-						<div class="col-3">
-							<img src="img/icons/design-icon.png" class="services-icon">
-						</div>
-						<div class="col-9">
-							<h2 class="services-title">
-								Design POSM 
-							</h2>
-							<p class="services-desc">
-								We offer a unique design and creative approach to the development of the range of promotional materials
-								(stickers, shelf-talkers, stands etc.), and to a visual arrangement options for brand
-								zones in the points of sale. Our comprehensive approach solves a number of objectives:
-								selling the product
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<div class="portfolio">
-							<div class="portfolio__wrap portfolio__wrap_full">
-								<!--<span class="portfolio__quantity portfolio__quantity_sticker">
-									8780
-								</span>-->
-								<div class="portfolio__type portfolio__type_sticker">
-									<span class="portfolio__name">Stickers</span>	
-									<p class="portfolio__category">
-										shelf-talkers, stands etc.
-									</p>
-								</div>
-								<a href="#" class="btn btn_portfolio" id="stickersBtn">
-									View projects
-								</a>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="ecommerce">
-				<div class="services-type">
-					<div class="row">
-						<div class="col-3">
-							<img src="img/icons/pvprod-icon.png" class="services-icon">
-						</div>
-						<div class="col-9">
-							<h2 class="services-title">
-								photo <br>
-								video production 
-							</h2>
-							<p class="services-desc">
-								We rely on an individual and creative approach, diving deeply in the objective’s essence and using the freshest 
-								technological solutions to create high quality photo and video-content,
-								which efficiently works for the promotion of your business. We have a full cycle photo and video production
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-6 col-md-12">
-						<div class="portfolio">
-							<div class="portfolio__wrap">
-								<!--<span class="portfolio__quantity portfolio__quantity_video">
-									78
-								</span>-->
-								<div class="portfolio__type portfolio__type_video">
-									<span class="portfolio__name">Video</span>	
-									<p class="portfolio__category">
-										present, information
-									</p>
-								</div>
-							</div>	
-							<a href="#" class="btn" id="videoBtn">
-								View projects
-							</a>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-12">
-						<div class="portfolio">
-							<div class="portfolio__wrap">
-								<!--<span class="portfolio__quantity portfolio__quantity_photo">
-									320
-								</span>-->
-								<div class="portfolio__type portfolio__type_photo">
-									<span class="portfolio__name">Photo</span>	
-									<p class="portfolio__category">
-										present, information
-									</p>
-								</div>
-							</div>	
-							<a href="#" class="btn" id="photoBtn">
-								View projects
-							</a>
-						</div>
-					</div>
-				</div>
-			</article>
-		</div>
-	</section>
-
-	<section class="location" id="location">
-		<section class="partners" id="partners">
-			<div class="container">
-				<h3 class="partners_title">
-					Clients & partners<span>.</span>
-				</h3>
-				<div class="brands">
-					<a href="#" class="brands__item">
-						<img src="img/brands/delonghi.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/braun.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/kenwood.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/lavazza.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/samsung.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/mvideo.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/eldorado.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/media.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/ozon.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/sitylink.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/perekrestok.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/billa.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/megamart.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/globus-rus.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/blockforce.png" class="img-fluid">
-					</a>					
-					<a href="#" class="brands__item">
-						<img src="img/brands/merkuri.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/posuda.png" class="img-fluid">
-					</a>
-					<a href="#" class="brands__item">
-						<img src="img/brands/aton.png" class="img-fluid">
-					</a>
-				</div>
-			</div>
-		</section>
-		<div class="container">
-			<div class="location_title">
-				<div class="first">
-					<span>Locations</span>
-					<div class="remband"></div>
-				</div>
-				<span>Rembrand</span>
-			</div>
-		</div>
-	</section>
-
-	<footer class="footer" id="footer">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-5 col-sm-3">
-					<a href="/" class="logo">
-						<img src="img/logo.png" alt="logo" class="img-fluid">
-					</a>
-				</div>
-				<div class="col-7 col-sm-9 d-flex justify-content-end">
-					<div class="contacts">
-						<div class="contacts__el">
-							<span class="contacts__number">+7 (965)243-8603 RU</span>
-							<!-- <span class="contacts__city"></span> -->
-						</div>
-						<div class="contacts__el">
-							<span class="contacts__number">+82 10-4609-3123 KR</span>
-							<!-- <span class="contacts__city"></span> -->
-						</div>
-						<div class="contacts__el">
-							<span class="contacts__number">ms@rembrand.me</span>
-							<!-- <span class="contacts__city">Email</span> -->
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer_bottom">
-				<div class="row justify-content-between">
-					<div class="col-auto">
-						<p class="footer_copyrite">
-							&copy; 2014-2019  Digital Agency. All rights reserved
-						</p>
-					</div>
-					<div class="col-auto">
-						<p class="footer_dev">
-							Project development <span>Rem</span>Brand
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<div class="popup" id="landing">
-		<div class="popup-modal">
-			<button class="popup__close">&#215;</button>
-			<div class="portfolio portfolio_popup">
-				<div class="portfolio__wrap portfolio__wrap_full">
-					<!--<span class="portfolio__quantity portfolio__quantity_landing">
-						120
-					</span>-->
-					<div class="portfolio__type portfolio__type_landing">
-						<span class="portfolio__name">Landing pages</span>	
-						<p class="portfolio__category">
-							brandpage, shop-in-shop
-						</p>
-					</div>
-					<a href="#" class="btn btn_portfolio">
-						order project
-					</a>
-				</div>	
-			</div>
-			<div class="popup__imgs">
-				<a href="img/landingpage/1.jpg" class="popup__img" data-lightbox="roadtrip1">
-					<img src="img/landingpage/1.jpg">
-				</a>
-				<a href="img/landingpage/2.jpg" class="popup__img" data-lightbox="roadtrip1">
-					<img src="img/landingpage/2.jpg">
-				</a>
-				<a href="img/landingpage/3.jpg" class="popup__img" data-lightbox="roadtrip1">
-					<img src="img/landingpage/3.jpg">
-				</a>
-				<a href="img/landingpage/4.jpg" class="popup__img" data-lightbox="roadtrip1">
-					<img src="img/landingpage/4.jpg">
-				</a>
-				<a href="img/landingpage/5.jpg" class="popup__img" data-lightbox="roadtrip1">
-					<img src="img/landingpage/5.jpg">
-				</a>
-				<a href="img/landingpage/6.jpg" class="popup__img" data-lightbox="roadtrip1">
-					<img src="img/landingpage/6.jpg">
-				</a>
-				<a href="img/landingpage/7.jpg" class="popup__img" data-lightbox="roadtrip1">
-					<img src="img/landingpage/7.jpg">
-				</a>
-				<a href="img/landingpage/8.jpg" class="popup__img" data-lightbox="roadtrip1">
-					<img src="img/landingpage/8.jpg">
-				</a>
-				<a href="img/landingpage/9.jpg" class="popup__img" data-lightbox="roadtrip1">
-					<img src="img/landingpage/9.jpg">
-				</a>
-				<a href="img/landingpage/10.jpg" class="popup__img" data-lightbox="roadtrip1">
-					<img src="img/landingpage/10.jpg">
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup" id="ico">
-		<div class="popup-modal">
-			<button class="popup__close">&#215;</button>
-			<div class="portfolio portfolio_popup">
-				<div class="portfolio__wrap portfolio__wrap_full">
-					<!--<span class="portfolio__quantity portfolio__quantity_ico">
-						210
-					</span>-->
-					<div class="portfolio__type portfolio__type_ico">
-						<span class="portfolio__name">ICO projects</span>	
-						<p class="portfolio__category">
-							blockchain
-						</p>
-					</div>
-					<a href="#" class="btn btn_portfolio">
-						order project
-					</a>
-				</div>	
-			</div>
-			<div class="popup__imgs">
-				<a href="img/ico/1.jpg" class="popup__img" data-lightbox="roadtrip2">
-					<img src="img/ico/1.jpg">
-				</a>
-				<a href="img/ico/2.jpg" class="popup__img" data-lightbox="roadtrip2">
-					<img src="img/ico/2.jpg">
-				</a>
-				<a href="img/ico/3.jpg" class="popup__img" data-lightbox="roadtrip2">
-					<img src="img/ico/3.jpg">
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup" id="store">
-		<div class="popup-modal">
-			<button class="popup__close">&#215;</button>
-			<div class="portfolio portfolio_popup">
-				<div class="portfolio__wrap portfolio__wrap_full">
-					<!--<span class="portfolio__quantity portfolio__quantity_store">
-						99
-					</span>-->
-					<div class="portfolio__type portfolio__type_store">
-						<span class="portfolio__name">Banners</span>	
-						<p class="portfolio__category">
-							advertising
-						</p>
-					</div>
-					<a href="#" class="btn btn_portfolio">
-						order project
-					</a>
-				</div>	
-			</div>
-			<div class="popup__imgs">
-				<a href="img/store/1.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/1.jpg">
-				</a>
-				<a href="img/store/2.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/2.jpg">
-				</a>
-				<a href="img/store/3.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/3.jpg">
-				</a>
-				<a href="img/store/4.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/4.jpg">
-				</a>
-				<a href="img/store/5.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/5.jpg">
-				</a>
-				<a href="img/store/6.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/6.jpg">
-				</a>
-				<a href="img/store/7.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/7.jpg">
-				</a>
-				<a href="img/store/8.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/8.jpg">
-				</a>
-				<a href="img/store/9.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/9.jpg">
-				</a>
-				<a href="img/store/10.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/10.jpg">
-				</a>
-				<a href="img/store/11.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/11.jpg">
-				</a>
-				<a href="img/store/12.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/12.jpg">
-				</a>
-				<a href="img/store/13.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/13.jpg">
-				</a>
-				<a href="img/store/14.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/14.jpg">
-				</a>
-				<a href="img/store/15.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/15.jpg">
-				</a>
-				<a href="img/store/16.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/16.jpg">
-				</a>
-				<a href="img/store/17.jpg" class="popup__img" data-lightbox="roadtrip3">
-					<img src="img/store/17.jpg">
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup" id="content">
-		<div class="popup-modal">
-			<button class="popup__close">&#215;</button>
-			<div class="portfolio portfolio_popup">
-				<div class="portfolio__wrap portfolio__wrap_full">
-					<!--<span class="portfolio__quantity portfolio__quantity_content">
-						102
-					</span>-->
-					<div class="portfolio__type portfolio__type_content">
-						<span class="portfolio__name">Content</span>	
-						<p class="portfolio__category">
-							information
-						</p>
-					</div>
-				</div>	
-			</div>
-			<div class="popup__imgs">
-				<a href="img/content/1.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/1.jpg">
-				</a>
-				<a href="img/content/2.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/2.jpg">
-				</a>
-				<a href="img/content/3.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/3.jpg">
-				</a>
-				<a href="img/content/4.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/4.jpg">
-				</a>
-				<a href="img/content/5.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/5.jpg">
-				</a>
-				<a href="img/content/6.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/6.jpg">
-				</a>
-				<a href="img/content/7.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/7.jpg">
-				</a>
-				<a href="img/content/8.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/8.jpg">
-				</a>
-				<a href="img/content/9.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/9.jpg">
-				</a>
-				<a href="img/content/10.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/10.jpg">
-				</a>
-				<a href="img/content/11.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/11.jpg">
-				</a>
-				<a href="img/content/12.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/12.jpg">
-				</a>
-				<a href="img/content/13.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/13.jpg">
-				</a>
-				<a href="img/content/14.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/14.jpg">
-				</a>
-				<a href="img/content/15.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/15.jpg">
-				</a>
-				<a href="img/content/16.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/16.jpg">
-				</a>
-				<a href="img/content/17.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/17.jpg">
-				</a>
-				<a href="img/content/18.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/18.jpg">
-				</a>
-				<a href="img/content/19.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/19.jpg">
-				</a>
-				<a href="img/content/20.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/20.jpg">
-				</a>
-				<a href="img/content/21.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/21.jpg">
-				</a>
-				<a href="img/content/22.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/22.jpg">
-				</a>
-				<a href="img/content/23.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/23.jpg">
-				</a>
-				<a href="img/content/24.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/24.jpg">
-				</a>
-				<a href="img/content/25.jpg" class="popup__img" data-lightbox="roadtrip4">
-					<img src="img/content/25.jpg">
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup" id="stickers">
-		<div class="popup-modal">
-			<button class="popup__close">&#215;</button>
-			<div class="portfolio portfolio_popup">
-				<div class="portfolio__wrap portfolio__wrap_full">
-					<!--<span class="portfolio__quantity portfolio__quantity_sticker">
-						8780
-					</span>-->
-					<div class="portfolio__type portfolio__type_sticker">
-						<span class="portfolio__name">Stickers</span>	
-						<p class="portfolio__category">
-							shelf-talkers, stands etc.
-						</p>
-					</div>
-					<a href="#" class="btn btn_portfolio">
-						order project
-					</a>
-				</div>	
-			</div>
-			<div class="popup__imgs">
-				<a href="img/stickers/1.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/1.jpg">
-				</a>
-				<a href="img/stickers/2.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/2.jpg">
-				</a>
-				<a href="img/stickers/3.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/3.jpg">
-				</a>
-				<a href="img/stickers/4.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/4.jpg">
-				</a>
-				<a href="img/stickers/5.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/5.jpg">
-				</a>
-				<a href="img/stickers/6.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/6.jpg">
-				</a>
-				<a href="img/stickers/7.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/7.jpg">
-				</a>
-				<a href="img/stickers/8.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/8.jpg">
-				</a>
-				<a href="img/stickers/9.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/9.jpg">
-				</a>
-				<a href="img/stickers/10.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/10.jpg">
-				</a>
-				<a href="img/stickers/11.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/11.jpg">
-				</a>
-				<a href="img/stickers/12.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/12.jpg">
-				</a>
-				<a href="img/stickers/13.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/13.jpg">
-				</a>
-				<a href="img/stickers/14.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/14.jpg">
-				</a>
-				<a href="img/stickers/15.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/15.jpg">
-				</a>
-				<a href="img/stickers/16.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/16.jpg">
-				</a>
-				<a href="img/stickers/17.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/17.jpg">
-				</a>
-				<a href="img/stickers/18.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/18.jpg">
-				</a>
-				<a href="img/stickers/19.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/19.jpg">
-				</a>
-				<a href="img/stickers/20.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/20.jpg">
-				</a>
-				<a href="img/stickers/21.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/21.jpg">
-				</a>
-				<a href="img/stickers/22.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/22.jpg">
-				</a>
-				<a href="img/stickers/23.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/23.jpg">
-				</a>
-				<a href="img/stickers/24.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/24.jpg">
-				</a>
-				<a href="img/stickers/25.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/25.jpg">
-				</a>
-				<a href="img/stickers/26.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/26.jpg">
-				</a>
-				<a href="img/stickers/27.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/27.jpg">
-				</a>
-				<a href="img/stickers/28.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/28.jpg">
-				</a>
-				<a href="img/stickers/29.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/29.jpg">
-				</a>
-				<a href="img/stickers/30.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/30.jpg">
-				</a>
-				<a href="img/stickers/31.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/31.jpg">
-				</a>
-				<a href="img/stickers/32.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/32.jpg">
-				</a>
-				<a href="img/stickers/33.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/33.jpg">
-				</a>
-				<a href="img/stickers/34.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/34.jpg">
-				</a>
-				<a href="img/stickers/35.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/35.jpg">
-				</a>
-				<a href="img/stickers/36.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/36.jpg">
-				</a>
-				<a href="img/stickers/37.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/37.jpg">
-				</a>
-				<a href="img/stickers/38.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/38.jpg">
-				</a>
-				<a href="img/stickers/39.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/39.jpg">
-				</a>
-				<a href="img/stickers/40.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/40.jpg">
-				</a>
-				<a href="img/stickers/41.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/41.jpg">
-				</a>
-				<a href="img/stickers/42.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/42.jpg">
-				</a>
-				<a href="img/stickers/43.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/43.jpg">
-				</a>
-				<a href="img/stickers/44.jpg" class="popup__img" data-lightbox="roadtrip5">
-					<img src="img/stickers/44.jpg">
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup" id="video">
-		<div class="popup-modal">
-			<button class="popup__close">&#215;</button>
-			<div class="portfolio portfolio_popup">
-				<div class="portfolio__wrap portfolio__wrap_full">
-					<!--<span class="portfolio__quantity portfolio__quantity_video">
-						78
-					</span>-->
-					<div class="portfolio__type portfolio__type_video">
-						<span class="portfolio__name">Video</span>	
-						<p class="portfolio__category">
-							present, information
-						</p>
-					</div>
-				</div>	
-			</div>
-			<div class="popup__imgs">
-				<a class="popup__img popup_video"> <!-- data-video-id="ucaRVWpRmsw" -->
-					<img src="img/video/1.jpg">
-				</a>
-				<a class="popup__img popup_video">
-					<img src="img/video/2.jpg">
-				</a>
-				<a class="popup__img popup_video">
-					<img src="img/video/3.jpg">
-				</a>
-				<a class="popup__img popup_video">
-					<img src="img/video/4.jpg">
-				</a>
-				<a class="popup__img popup_video">
-					<img src="img/video/5.jpg">
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup" id="photo">
-		<div class="popup-modal">
-			<button class="popup__close">&#215;</button>
-			<div class="portfolio portfolio_popup">
-				<div class="portfolio__wrap portfolio__wrap_full">
-					<!--<span class="portfolio__quantity portfolio__quantity_photo">
-						320
-					</span>-->
-					<div class="portfolio__type portfolio__type_photo">
-						<span class="portfolio__name">Photo</span>	
-						<p class="portfolio__category">
-							present, information
-						</p>
-					</div>
-					<a href="#" class="btn btn_portfolio">
-						order project
-					</a>
-				</div>	
-			</div>
-			<div class="popup__imgs">
-				<a href="img/photo/1.jpg" class="popup__img" data-lightbox="roadtrip6">
-					<img src="img/photo/1.jpg">
-				</a>
-				<a href="img/photo/2.jpg" class="popup__img" data-lightbox="roadtrip6">
-					<img src="img/photo/2.jpg">
-				</a>
-				<a href="img/photo/3.jpg" class="popup__img" data-lightbox="roadtrip6">
-					<img src="img/photo/3.jpg">
-				</a>
-				<a href="img/photo/4.jpg" class="popup__img" data-lightbox="roadtrip6">
-					<img src="img/photo/4.jpg">
-				</a>
-				<a href="img/photo/5.jpg" class="popup__img" data-lightbox="roadtrip6">
-					<img src="img/photo/5.jpg">
-				</a>
-				<a href="img/photo/6.jpg" class="popup__img" data-lightbox="roadtrip6">
-					<img src="img/photo/6.jpg">
-				</a>
-				<a href="img/photo/7.jpg" class="popup__img" data-lightbox="roadtrip6">
-					<img src="img/photo/7.jpg">
-				</a>
-				<a href="img/photo/8.jpg" class="popup__img" data-lightbox="roadtrip6">
-					<img src="img/photo/8.jpg">
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup" id="digital">
-		<div class="popup-modal">
-			<button class="popup__close">&#215;</button>
-			<div class="portfolio portfolio_popup">
-				<div class="portfolio__wrap portfolio__wrap_full">
-					<!--<span class="portfolio__quantity portfolio__quantity_product">
-						1280
-					</span>-->
-					<div class="portfolio__type portfolio__type_product">
-						<span class="portfolio__name">Digital product</span>	
-						<p class="portfolio__category">
-							banners, reclame
-						</p>
-					</div>
-					<a href="#" class="btn btn_portfolio">
-						order project
-					</a>
-				</div>	
-			</div>
-			<div class="popup__imgs">
-				<a href="img/digital/1.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/1.jpg">
-				</a>
-				<a href="img/digital/2.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/2.jpg">
-				</a>
-				<a href="img/digital/3.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/3.jpg">
-				</a>
-				<a href="img/digital/4.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/4.jpg">
-				</a>
-				<a href="img/digital/5.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/5.jpg">
-				</a>
-				<a href="img/digital/6.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/6.jpg">
-				</a>
-				<a href="img/digital/7.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/7.jpg">
-				</a>
-				<a href="img/digital/8.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/8.jpg">
-				</a>
-				<a href="img/digital/9.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/9.jpg">
-				</a>
-				<a href="img/digital/10.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/10.jpg">
-				</a>
-				<a href="img/digital/11.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/11.jpg">
-				</a>
-				<a href="img/digital/12.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/12.jpg">
-				</a>
-				<a href="img/digital/13.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/13.jpg">
-				</a>
-				<a href="img/digital/14.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/14.jpg">
-				</a>
-				<a href="img/digital/15.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/15.jpg">
-				</a>
-				<a href="img/digital/16.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/16.jpg">
-				</a>
-				<a href="img/digital/17.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/17.jpg">
-				</a>
-				<a href="img/digital/18.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/18.jpg">
-				</a>
-				<a href="img/digital/19.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/19.jpg">
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup" id="corporate">
-		<div class="popup-modal">
-			<button class="popup__close">&#215;</button>
-			<div class="portfolio portfolio_popup">
-				<div class="portfolio__wrap portfolio__wrap_full">
-					<!--<span class="portfolio__quantity portfolio__quantity_product">
-						1280
-					</span>-->
-					<div class="portfolio__type portfolio__type_corporate">
-						<span class="portfolio__name">Corporate identity</span>	
-						<p class="portfolio__category">
-							logo, packaging
-						</p>
-					</div>
-					<a href="#" class="btn btn_portfolio">
-						order project
-					</a>
-				</div>	
-			</div>
-			<div class="popup__imgs">
-				<a href="img/digital/1.jpg" class="popup__img" data-lightbox="roadtrip7">
-					<img src="img/digital/1.jpg">
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<script src="js/jquery/jquery.min.js"></script>
-	<script src="js/slick/slick.min.js"></script>
-	<script src="js/lightbox/lightbox.min.js"></script>
-	<script src="js/modal-video/jquery-modal-video.js"></script>
-	<script src="js/modal-video/modal-video.min.js"></script>
-	<script src="js/main.js"></script>
 </body>
 </html>
