@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+	font-family: 'Futura New';
+    font-weight: 400;
+}
+
+.container {
+    /*max-width: 1260px;
+    min-width: 1260px;*/
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-title {
+    margin: 0;
+    color: #0c2645;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.main {
+    padding: 225px 0 163px 0;
+    background: #363b43 url(../img/main-bg.jpg) no-repeat center center / cover;
+    text-align: right;
+}
+
+.main__title {
+    font-size: 52px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 65px;
+}
+
+.main__btn {
+    text-decoration: none;
+    padding: 10px 35px;
+    margin-bottom: 90px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #e6bf9a;
+    border: none;
+}
+
+.main__btn {
+    cursor: pointer;
+}
+
+.main__sentence {
+    float: right;
+    text-align: left;
+    color: #fff;
+    font-size: 29px;
+    line-height: 45px;
+    letter-spacing: 2px;
+}
+
+.main__sentence span {
+    font-size: 50px;
+}
+
+.main__sentence b {
+    font-size: 41px;
+}
+
+.main__sentence .upper {
+    line-height: 45px;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 7px;
+}
+
+.compliment {
+    padding-top: 10px;
+}
+
+.compliment__info {
+    padding-left: 70px;
+    padding-top: 90px;
+    background: url(../img/compliment-bg.png) no-repeat center right;
+    background-size: 100%;
+    height: 100%;
+}
+
+.compliment__title {
+    margin-bottom: 100px;
+}
+
+.compliment__desc {
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: italic;
+    color: #747474;
+    font-size: 30px;
+}
+
+.compliment__desc span {
+    color: #0c2645;
+}
+
+.compliment__desc::before {
+    content: '';
+    position: absolute;
+    top: -72px;
+    left: calc(50% - 26.5px);
+    width: 53px;
+    height: 42px;
+    background: url(../img/coffe-icon.png) no-repeat;
+}
+
+.parallax {
+    background: #000 url(../img/parallax.jpg) no-repeat center center / cover;
+    background-attachment: fixed
+}
+
+.advantages {
+    padding-top: 65px;
+    padding-bottom: 130px;
+}
+
+.advantages__title {
+    margin-bottom: 70px;
+}
+
+.advantages__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.advantages-item {
+    min-height: 420px;
+    text-align: center;
+}
+
+.advantages-item__bottom {
+    margin-top: 35px;
+}
+
+.advantages-item__num {
+    margin: 0 auto;
+    width: 67px;
+    height: 67px;
+    background: url(../img/num-border.png) no-repeat center center / cover;
+    line-height: 67px;
+    color: #0c2645;
+    font-family: 'Roboto';
+    font-size: 30px;
+}
+
+.advantages-item__title {
+    font-size: 24px;
+    line-height: 25px;
+    color: #747474;
+}
+
+.advantages-item__text {
+    color: #747474;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.motto {
+    min-height: 830px;
+    display: flex;
+    position: relative;
+}
+
+.motto::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 29px;
+    width: calc(100% - 58px);
+    height: calc(100% - 28px);
+    border: 3px solid #fff;
+}
+
+.motto__block, .motto__img {
+    width: 50%;
+}
+
+.motto__img {
+    background: url(../img/motto-img.png) no-repeat center center / cover;
+}
+
+.motto__block {
+    padding: 35px 95px 50px 75px;
+    background: #0c2645 url(../img/motto-bg.png) no-repeat center left 30px;
+    color: #fff;
+}
+
+.motto__title {
+    font-size: 52px;
+    line-height: 60px;
+}
+
+.motto__text {
+    font-size: 42px;
+    font-weight: 300;
+    font-style: oblique;
+    line-height: 41.54px;
+}
+
+.steps {
+    padding-top: 70px;
+}
+
+.steps__wrap {
+    padding: 0 75px;
+    margin-top: 48px;
+}
+
+.steps__item {
+    padding-top: 155px;
+    position: relative;
+}
+
+.steps__item:hover .steps__icon {
+    width: 180px;
+    height: 180px;
+}
+
+.steps__icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .2s;
+    width: 172px;
+    height: 172px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.steps__title {
+    text-align: center;
+    color: #747474;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.steps__icon_1 {
+    background-image: url(../img/step-1.png);
+}
+.steps__icon_2 {
+    background-image: url(../img/step-2.png);
+}
+.steps__icon_3 {
+    background-image: url(../img/step-3.png);
+}
+.steps__icon_4 {
+    background-image: url(../img/step-4.png);
+}
+
+.regulations {
+    padding-bottom: 100px;
+}
+
+.regulations .container {
+    padding: 0 140px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: italic;
+    line-height: 40px;
+}
+
+.regulations__title {
+    color: #0c2645;
+    font-size: 35px;   
+    margin-bottom: 10px;
+}
+
+.regulations__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #747474;
+    font-size: 30px;
+}
+
+.products__title {
+    margin-bottom: 38px;
+}
+
+@media screen and (min-width: 1290px) {
+    .container {
+        max-width: 1260px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-title {
+        font-size: 43px;
+    }
+    .main__sentence {
+        font-size: 27px;
+    }
+    .main__sentence span {
+        font-size: 47px;
+    }
+    .main__sentence b {
+        font-size: 38px;
+    }
+    .compliment__info {
+        padding-top: 55px;
+    }
+    .compliment__title {
+        line-height: 50px;
+        margin-bottom: 80px;
+    }
+    .compliment__desc::before {
+        top: -55px;
+    }
+    .advantages {
+        padding-bottom: 60px;
+    }
+    .motto  {
+        min-height: 600px;
+    }
+    .motto__title {
+        font-size: 38px;
+    }
+    .motto__text {
+        font-size: 27px;
+    }
+    .steps__title {
+        margin-top: 5px;
+        font-size: 24px;
+    }
+    .steps__icon {
+        width: 140px;
+        height: 140px;
+    }
+    .steps__item:hover .steps__icon {
+        width: 150px;
+        height: 150px;
+    }
+    .regulations__title {
+        font-size: 30px;
+    }
+    .regulations__list {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .main {
+        padding: 125px 0 100px 0;
+    }
+    .main__btn {
+        margin-bottom: 60px;
+    }
+    .compliment__info {
+        background-position: top right;
+    }
+    .motto__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .regulations .container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .main {
+        padding: 50px 0 50px 0;
+    }
+    .compliment__info {
+        padding-left: 0;
+    }
+    .advantages  {
+        padding-top: 40px;
+    }
+    .advantages__title {
+        margin-bottom: 40px;
+    }
+    .advantages-item {
+        min-height: auto;
+    }
+    .steps__wrap {
+        padding: 0;
+    }
+    .regulations__title {
+        font-size: 26px;
+    }
+    .regulations__list {
+        font-size: 20px;
+    }
+    .motto {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .motto__block, .motto__img {
+        width: 100%;
+    }
+    .motto__img {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section-title {
+        font-size: 30px;
+    }
+    .main__title {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    .main__sentence  {
+        font-size: 23px;
+    }
+    .main__sentence span {
+        font-size: 27px;
+    }
+    .main__sentence b {
+        font-size: 28px;
+    }
+    .main__sentence .upper {
+        font-size: 35px;
+        text-align: left;
+    }
+    .main__btn  {
+        margin-bottom: 20px;
+    }
+    .compliment__info {
+        padding-top: 30px;
+    }
+    .compliment__desc {
+        font-size: 23px;
+    }
+    .motto__block {
+        padding: 15px 30px 15px 40px;
+    }
+    .motto__img {
+        height: 300px;
+    }
+    .regulations .container {
+        padding: 0 20px;
+    }
+    .regulations {
+        padding-bottom: 40px;
+    }
+}
