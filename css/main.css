@@ -305,6 +305,10 @@ body {
     margin-bottom: 38px;
 }
 
+.main__btn_mob {
+    display: none;
+}
+
 @media screen and (min-width: 1290px) {
     .container {
         max-width: 1260px;
@@ -431,27 +435,47 @@ body {
     .section-title {
         font-size: 30px;
     }
+    .main {
+        text-align: center;
+        padding-top: 300px;
+        padding-bottom: 0;
+        background-position: -190px 0;
+    }
+    .main__wrap {
+        padding-top: 20px;
+        background-color: rgba(0, 0, 0, .6);
+    }
     .main__title {
-        font-size: 30px;
+        font-size: 25px;
+        text-align: center;
         margin-top: 0;
-        margin-bottom: 25px;
+        margin-bottom: 0;
     }
     .main__sentence  {
-        line-height: 28px;
-        font-size: 23px;
+        width: 100%;
+        margin-top: 8px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 16px;
     }
     .main__sentence span {
-        font-size: 33px;
+        font-size: 16px;
     }
     .main__sentence strong {
-        font-size: 28px;
+        font-size: 16px;
     }
     .main__sentence .upper {
-        font-size: 35px;
-        text-align: left;
+        font-size: 16px;
+        text-align: center;
+        padding-right: 0;
+        line-height: 20px;
     }
     .main__btn  {
+        display: none;
         margin-bottom: 20px;
+    }
+    .main__btn_mob {;
+        display: inline-block;
     }
     .compliment__info {
         padding-top: 30px;
