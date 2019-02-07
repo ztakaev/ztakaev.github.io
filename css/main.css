@@ -41,6 +41,7 @@ body {
 }
 
 .main__btn {
+    display: inline-block;
     text-decoration: none;
     padding: 10px 35px;
     margin-bottom: 90px;
@@ -58,6 +59,7 @@ body {
 
 .main__sentence {
     float: right;
+    font-weight: 400;
     text-align: left;
     color: #fff;
     font-size: 29px;
@@ -69,7 +71,8 @@ body {
     font-size: 50px;
 }
 
-.main__sentence b {
+.main__sentence strong {
+    font-weight: 400;
     font-size: 41px;
 }
 
@@ -162,6 +165,7 @@ body {
 
 .advantages-item__title {
     font-size: 24px;
+    font-weight: 400;
     line-height: 25px;
     color: #747474;
 }
@@ -205,6 +209,7 @@ body {
 }
 
 .motto__title {
+    font-weight: 500;
     font-size: 52px;
     line-height: 60px;
 }
@@ -284,6 +289,7 @@ body {
 .regulations__title {
     color: #0c2645;
     font-size: 35px;   
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
@@ -353,6 +359,7 @@ body {
         height: 150px;
     }
     .regulations__title {
+        font-weight: 400;
         font-size: 30px;
     }
     .regulations__list {
@@ -430,12 +437,13 @@ body {
         margin-bottom: 25px;
     }
     .main__sentence  {
+        line-height: 28px;
         font-size: 23px;
     }
     .main__sentence span {
-        font-size: 27px;
+        font-size: 33px;
     }
-    .main__sentence b {
+    .main__sentence strong {
         font-size: 28px;
     }
     .main__sentence .upper {
@@ -463,4 +471,23 @@ body {
     .regulations {
         padding-bottom: 40px;
     }
+}
+
+@media screen and (max-width: 420px) {
+    .steps__item {
+        padding-top: 115px;
+    }
+    .steps__title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .steps__icon {
+        width: 100px;
+        height: 100px;
+    }
+    .steps__item:hover .steps__icon {
+        width: 110px;
+        height: 110px;
+    }
+
 }
