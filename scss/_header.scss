@@ -1,0 +1,72 @@
+.header {
+    padding: 8px 0 12px 0;
+    background-color: #fff;
+    &-top {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-bottom {
+        .navbar-brand {
+            margin-left: -15px;
+        }
+        .navbar {
+            padding: 0;
+        }
+        .nav-link {
+            padding: 0!important;
+            color: #494b51;
+            font-size: 14px;
+            letter-spacing: 0.35px;
+            text-transform: uppercase;
+        }
+        .navbar-nav {
+            margin-left: auto;
+            .nav-item {
+                margin-left: 74px;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+            .dropdown-toggle {
+                position: relative;
+            }
+            .dropdown-toggle::after {
+                position: absolute;
+                bottom: 7px;
+                right: -24px;
+                border: none;
+                width: 9px;
+                height: 5px;
+                background: url(../img/icons/dropdown-menu.png) no-repeat center center / cover;
+            }
+            .dropdown-menu {
+                margin-top: 15px;
+                padding: 0;
+                border-radius: 0;
+                border: none;
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+                .dropdown-item {
+                    padding: 20px 30px;
+                    border-bottom: 1px solid #ececee;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: 0.36px;
+                    color: #666c79;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    &:hover {
+                        color: #7a0039; 
+                        background-color: inherit;
+                    }
+                }
+            }
+        }
+        .navbar-light .navbar-toggler {
+            border: none;
+            padding: 0;
+        }
+    }
+}

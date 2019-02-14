@@ -1,0 +1,21 @@
+.phone {
+    margin: 0;
+    position: relative;
+    color: #7a0039;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -28px;
+        bottom: 10px;
+        width: 16px;
+        height: 16px;
+        background:url(../img/icons/phone.png) no-repeat center center / cover;
+    }
+    &_header {
+        margin-left: 77px;
+    }
+}

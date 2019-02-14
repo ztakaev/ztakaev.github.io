@@ -1,0 +1,11 @@
+@import '_mixins/font-face';
+
+@include font-face("Muller", "../fonts/Muller/MullerRegular", 400);
+@include font-face("Muller", "../fonts/Muller/MullerMedium", 500);
+@include font-face("Muller", "../fonts/Muller/MullerLight", 300);
+@include font-face("Muller", "../fonts/Muller/MullerBold", 700);
+@include font-face("Muller", "../fonts/Muller/MullerExtraBold", 800);
+
+@include font-face("Helvetica", "../fonts/Helvetica/HelveticaNeueCyr-Bold", 700);
+
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Bold", 700);

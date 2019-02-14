@@ -1,0 +1,49 @@
+@import 'fonts';
+
+@import 'libs/bootstrap.scss';
+@import 'libs/slick/slick-theme.scss';
+@import 'libs/slick/slick.scss';
+@import 'libs/jstarbox.scss';
+@import 'libs/normalize.scss';
+
+
+@import 'common';
+
+@import 'blocks/btn';
+
+@import 'header';
+@import 'blocks/nav';
+@import 'blocks/feedback';
+@import 'blocks/phone';
+
+@import 'blocks/main-slider';
+
+@import 'popular';
+@import 'blocks/products-slider';
+
+@import 'blocks/double-slider';
+
+@import 'new';
+
+@import 'news';
+@import 'blocks/news-item';
+
+@import 'subscription';
+
+@import 'footer';
+
+@import 'blocks/popup';
+
+@import 'single';
+@import 'product';
+@import 'description';
+
+@import 'blocks/details';
+
+@import 'reviews';
+@import 'interesting';
+
+@import 'catalog';
+
+
+@import 'media';

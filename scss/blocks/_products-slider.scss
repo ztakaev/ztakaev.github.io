@@ -1,0 +1,62 @@
+.products-slider {
+    position: relative;
+    &__preview {
+        margin-bottom: 10px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &__title {
+        margin-bottom: 25px;
+        color: #242528;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.63px;
+    }
+    &__price {
+        color: #7a0039;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.13px;
+        span {
+            font-weight: 700;
+            font-family: 'Helvetica';
+        }
+    }
+    &__old-price {
+        margin-left: 12px;
+        font-size: 14px;
+        span {
+            font-weight: 700;
+            font-family: 'Helvetica';
+        }
+    }
+    .discount {
+        position: relative;
+        &::before {
+            content: '%';
+            position: absolute;
+            width: 44px;
+            height: 44px;
+            left: 15px;
+            top: 0;
+            border-radius: 50%;
+            background-color: #7a0039;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 44px;
+        }
+    }
+    .arrow-left, .arrow-right {
+        z-index: 10;
+        position: absolute;
+        top: 130px;
+    } 
+    .arrow-left {
+        left: -14.5px;
+    }
+    .arrow-right {
+        right: -14.5px;
+    }
+}
