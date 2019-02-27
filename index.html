@@ -1,364 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Document</title>
-	<link rel="stylesheet" href="static/css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>DeLonghi</title>
 </head>
+
 <body>
-	<div class="container container_header">
-		<header class="header">
-			<div class="row">
-				<div class="col-12 col-sm-5">
-					<h1 class="header__title">
-						Выиграй
-						<span><b>битву</b> на кухне</span>
-					</h1>
-					<p class="sentence">
-						Купи <span>Cooking Chef</span><br>
-						<span class="model">KCC 9040s</span> и получи 
-					</p>
-					<div class="present">
-						<span class="present__num">3</span>
-						<p class="present__info">
-							<span>насадки</span>
-			  				в подарок!
-						</p>
-					</div>
-					<a href="#" class="header__btn">Купить</a>
+	<header class="header">
+		<nav class="header-nav">
+			<div class="container">
+				<div class="header-nav__wrap">
+					<i class="fas fa-th"></i>
+					<ul class="header-nav__links">
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Как выбрать</a></li>
+						<li><a href="#">Coffee club</a></li>
+					</ul>
+				</div>
+				<a href="#" class="header__logo">
+					<img class="img-fluid" src="static/img/logo.png" alt="Логотип">
+				</a>
+				<div class="header-info">
+					<span class="header-info__phone">8 (800) 100-45-69</span>
+					<span class="header-info__rate"><i class="fas fa-search"></i>2</span>
+					<span class="header-info__buy">
+						<span class="count"><i class="fas fa-search"></i>3</span> / 
+						<span class="price">29 990 ₽</span>
+					</span>
+					<button class="header-info__search"><i class="fas fa-search"></i></button>
 				</div>
 			</div>
-		</header>
-	</div>
-
-	<section class="functional">
+		</nav>
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-7 col-sm-6 col-md-6 col-lg-8">
-					<img class="img-fluid functional__img" src="static/img/second_section.png" alt="">
+			<h1 class="header__title">
+				Добро пожаловать <br>
+				в Coffee Club
+			</h1>
+		</div>
+		<nav class="main-nav container">
+			<a href="#" class="main-nav__link main-nav__link_act"><i class="fas fa-home"></i>Главная</a>
+			<a href="#" class="main-nav__link"><i class="far fa-clock"></i>История заказов</a>
+			<a href="#" class="main-nav__link"><i class="fas fa-star"></i>Рекомендуем</a>
+			<a href="#" class="main-nav__link"><i class="fas fa-heart"></i>Программа лояльности</a>
+			<a href="#" class="main-nav__link"><i class="fas fa-star"></i>Сертификаты гарантии</a>
+			<a href="#" class="main-nav__link"><i class="fas fa-ticket-alt"></i>Купоны</a>
+		</nav>
+	</header>
+	
+	<section class="profile">
+		<div class="container">
+			<div class="profile-info">
+				<div class="profile-user">
+					<div class="profile-user__avatar" style="background-image: url(static/img/user.png"></div>
+					<span class="profile-user__name">Иванов Иван</span>
+					<a href="#" class="btn profile-user__btn">Редактировать</a>
+				</div>
+				<div class="profile-contacts">
+					<h5 class="profile-contacts__title">Информация о профиле</h5>
+					<ul class="profile-contacts__list">
+						<li><i class="fas fa-map-marker-alt"></i>улица Константиновская, 26, Киев, 02000   </li>
+						<li><i class="fas fa-phone"></i>+ 7 (902) 568 58 98  </li>
+						<li><i class="fas fa-envelope"></i>E-mail@mail.ru</li>
+					</ul>
 				</div>
 			</div>
-			<span class="functional__item functional__item_l functional__item_1">Низкоскоростное<br> гнездо</span>
-			<span class="functional__item functional__item_l functional__item_2">Планетарное <br> смешивание</span>
-			<span class="functional__item functional__item_l functional__item_3">Индукционный <br> нагрев до 180°</span>
-			<span class="functional__item functional__item_r functional__item_4">Высокоскоростное <br> гнездо</span>
-			<span class="functional__item functional__item_r functional__item_5">24 предустановленные <br> программы</span>
-			<span class="functional__item functional__item_r functional__item_6">Регулятор <span>скорости</span></span>
+			<div class="bonus">
+				<h5 class="bonus__title">Накопленные бонусы</h5>
+				<span class="bonus__subtitle">У вас всего</span>
+				<span class="bonus__count">3000</span>
+				<a href="#" class="btn bonus__btn">Проверить</a>
+			</div>
+			
 		</div>
 	</section>
 
-	<section class="advantages">
+	<section class="offers">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 col-sm-9">
-					<h2 class="advantages__title">Кухонная машина</h2>
-					<p class="advantages__desc">
-						<span><b>Kenwood</b> Cooking Chef  -</span>
-						это незаменимый союзник на Вашей кухне, который бросит
-						вызов любому шеф-повару
+			<h2 class="section-title">Специальные предложения</h2>
+			<div class="offers__list">
+				<div class="offers__item">
+					<img src="static/img/offers/1.png" class="offers__img img-fluid">
+					<h4 class="offers__title">Подарки за баллы</h4>
+					<p class="offers__desc">
+						Спецпредложения оставляем. <br>
+						Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн курсы с возможностью проскролить то что внутри этих блоков есть
 					</p>
+					<a href="#" class="btn offers__btn">Подробнее</a>
 				</div>
+
+				<div class="offers__item">
+					<img src="static/img/offers/2.png" class="offers__img img-fluid">
+					<h4 class="offers__title">Мероприятия</h4>
+					<p class="offers__desc">
+						Спецпредложения оставляем. <br>
+						Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн
+					</p>
+					<a href="#" class="btn offers__btn">Подробнее</a>
+				</div>
+
+				<div class="offers__item">
+					<img src="static/img/offers/3.png" class="offers__img img-fluid">
+					<p class="offers__desc">
+						Спецпредложения оставляем. <br>
+						Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн курсы с возможностью проскролить то что внутри этих блоков есть
+					</p>
+					<a href="#" class="btn offers__btn">Подробнее</a>
+				</div>
+
 			</div>
-			<ul class="advantages-list">
-				<div class="row">
-					<div class="col-12 col-lg-10">
-						<li class="advantages-list__item">
-							<img src="static/img/adv_1.png" alt="" class="advantages-list__img">
-							<div class="advantages-list__wrap advantages-list__wrap_f">
-								<span class="advantages-list__num">1.</span>
-								<div class="advantages-list__info">
-									<h3 class="advantages-list__title advantages-list__title_f"><span><span>LCD</span> дисплей с установленными программами</span></h3>
-									<p class="advantages-list__desc">
-										Показывает выбранные настройки и этапы <br> программ. В комплектации установлены 24 <br> программы для самых разных рецептов. 
-									</p>
-								</div>
-							</div>
-						</li>
-					</div>
-
-					<div class="col-12">
-						<li class="advantages-list__item advantages-list__item_mod">
-							<div class="advantages-list__wrap advantages-list__wrap_mod">
-								<div class="advantages-list__info">
-									<h3 class="advantages-list__title advantages-list__title_mod">Чаша 6,7 литра <br> и планетарное смешивание </h3>
-									<p class="advantages-list__desc advantages-list__desc_mod">
-										с легкостью и тщательностью замешивайте как маленькие так и большие объемы 
-									</p>
-								</div>
-								<span class="advantages-list__num advantages-list__num_mod">2.</span>
-							</div>
-							<img src="static/img/adv_22.png" alt="" class="advantages-list__img advantages-list__img_mod">
-						</li>
-					</div>
-
-					<div class="col-12 col-lg-10">
-						<li class="advantages-list__item">
-							<img src="static/img/adv_3.png" alt="" class="advantages-list__img">
-							<div class="advantages-list__wrap advantages-list__wrap_f">
-								<span class="advantages-list__num">3.</span>
-								<div class="advantages-list__info">
-									<h3 class="advantages-list__title"><span>Индукционный нагрев</span></h3>
-									<p class="advantages-list__desc">
-										Быстрый и равномерный нагрев до <br> 180° поможет справиться с самыми <br> сложными рецептами
-									</p>
-								</div>
-							</div>
-						</li>
-					</div>
-
-					<div class="col-12">
-						<li class="advantages-list__item advantages-list__item_mod">
-							<div class="advantages-list__wrap advantages-list__wrap_mod">
-								<div class="advantages-list__info">
-									<h3 class="advantages-list__title advantages-list__title_mod">Более 20 насадок</h3>
-									<p class="advantages-list__desc advantages-list__desc_mod">
-										Для овощей, напитков, теста, пасты, фруктов
-									</p>
-								</div>
-								<span class="advantages-list__num advantages-list__num_mod">4.</span>
-							</div>
-							<img src="static/img/adv_4.png" alt="" class="advantages-list__img advantages-list__img_mod">
-						</li>
-					</div>
-
-					<div class="col-12 col-lg-10">
-						<li class="advantages-list__item">
-							<img src="static/img/adv_5.png" alt="" class="advantages-list__img">
-							<div class="advantages-list__wrap advantages-list__wrap_f">
-								<span class="advantages-list__num">5.</span>
-								<div class="advantages-list__info">
-									<h3 class="advantages-list__title"><span>Функция помешивания</span></h3>
-									<p class="advantages-list__desc">
-										Позволяет освободить время и успеть еще <br> больше
-									</p>
-								</div>
-							</div>
-						</li>
-					</div>
-				
-				</div>
-				
-			</ul>
 		</div>
 	</section>
-
-	<div class="products">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-sm-6">
-					<h2 class="products__title">
-						<span>неограниченные</span>
-						кулинарные 
-						<b>возможности</b>
-					</h2>
-					<p class="products__desc">
-						Разнообразие насадок поможет <br>
-						воплотить даже самые смелые идеи
-					</p>
+	
+	<section class="recommended container">
+		<h2 class="section-title">Рекомендованные товары</h2>
+		<div class="recommended-list">
+			<div id="recommendedSlider" class="recommended-list__slider">
+				<div class="recommended-list__item">
+					<img class="img-fluid" src="static/img/recommended/1.png">
+				</div>
+				<div class="recommended-list__item recommended-list__item_act">
+					<img class="img-fluid" src="static/img/recommended/2.png">
+				</div>
+				<div class="recommended-list__item">
+					<img class="img-fluid" src="static/img/recommended/3.png">
+				</div>
+				<div class="recommended-list__item">
+					<img class="img-fluid" src="static/img/recommended/4.png">
 				</div>
 			</div>
-
-			<div class="slider">
-				<div class="row" id="products">
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_1.jpg" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Мясорубка
-								<span>KAX950ME</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_2.jpg" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадка для <br>
-								нарезки кубиками
-								<span>KAX400PL</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_3.jpg" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Кухонный комбайн 
-								<span>KAH647PL</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_4.jpg" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Мельница для круп 
-								<span>KAX941PL</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_5.png" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадка <br>
-								мороженница
-								<span>AT957A</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_6.png" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадка <br>
-								для пасты 
-								<span>KAX910</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_7.png" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадка <br>
-								спиларайзер
-								<span>KAX700</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_8.png" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадка блендер
-								<span>KAH359Gl</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_9.png" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадка <br>
-								мультиизмельчитель
-								<span>AT320A</span>
-							</h4>
-						</div>
-					</div>
-					
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_10.png" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадка для <br>
-								раскатки пасты
-								<span>KAX980</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_11.png" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадки для <br>
-								нарезки пасты
-								<span>KAX981/2/3/4</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_12.png" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадка шнековая <br>
-								соковыжималка
-								<span>KAH720</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_13.png" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадка для смузи
-								<span>KAH740</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_14.png" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадка <br>
-								терка-ломтерезка
-								<span>KAX643</span>
-							</h4>
-						</div>
-					</div>
-
-					<div class="col-3">
-						<div class="slider-item">
-							<div class="slider-item__img">
-								<img class="img-fluid" src="static/img/product_15.png" alt="">
-							</div>
-							<h4 class="slider-item__title">
-								Насадка пресс <br>
-								для цитрусовых
-								<span>AT312</span>
-							</h4>
-						</div>
-					</div>
-				</div>
-				
-			</div>
+			
 		</div>
-	</div>
-
-
-	<script src="static/js/jquery.min.js"></script>
-	<script src="static/js/slick.min.js"></script>
-	<script src="static/js/main.js"></script>
+	</section>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/main.js"></script>
 </body>
+
 </html>
