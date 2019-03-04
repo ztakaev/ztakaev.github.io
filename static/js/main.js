@@ -124,16 +124,18 @@ $(document).ready(function() {
             if (!item.hasClass('active')) {
                 //убираем класс active
                 items.removeClass('active');
+                $('.trigger__btn').removeClass('trigger__btn_rot');
                 //добавляем active кликнутому
                 item.addClass('active');
                 //у того у кого был active задаём ширину 0
                 activeContent.animate({
                     'width': '0px'
                 });
+                $(this).addClass('trigger__btn_rot');
                 //кликнутому 530   
                 if($(window).width() < 575) {
                     content.animate({
-                        'width': '152px'
+                        'width': '140px'
                     });
                 } else {
                     content.animate({
@@ -147,6 +149,7 @@ $(document).ready(function() {
 
             } else {
                 item.removeClass('active');
+                $(this).removeClass('trigger__btn_rot');
                 content.removeClass('show-content');
                 content.animate({
                     'width': '0px'
@@ -172,10 +175,10 @@ $(document).ready(function() {
             i(".order__detailed-way").on("click", function() {
                 o = i(this).parents(".accordion_item"),
                 n = o.find(".way-info"),
-                    o.hasClass("active_block") ? (o.removeClass("active_block"),
+                    o.hasClass("active_block") ? (o.removeClass("active_block"), $(this).removeClass('detailed-rot'),
                     n.slideUp(), $(this).html("Подробнее")) : (o.addClass("active_block"), n.stop(!0, !0).slideDown(),
                     o.siblings(".active_block").removeClass("active_block").children(
-                    ".way-info").stop(!0, !0).slideUp(), $(this).html("Свернуть"))
+                    ".way-info").stop(!0, !0).slideUp(), $(this).html("Свернуть"), $(this).addClass('detailed-rot'))
 
             })
         }(jQuery);
