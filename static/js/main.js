@@ -202,4 +202,55 @@ $(document).ready(function() {
     showOrderWay();
     showOrderInfo();
 
+
+    $.widget( 'app.selectmenu', $.ui.selectmenu, {
+      _drawButton: function() {
+        this._super();
+        var selected = this.element
+        .find( '[selected]' )
+        .length,
+            placeholder = this.options.placeholder;
+
+        if (!selected && placeholder) {
+          this.buttonItem.text(placeholder);
+        }
+      }
+    });
+
+    $('#filter-day').selectmenu({
+        'placeholder': 'День'
+    });
+
+    $('#filter-month').selectmenu({
+        'placeholder': 'Месяц'
+    });
+
+    $('#filter-year').selectmenu({
+        'placeholder': 'Год'
+    });
+
+    $('#filter-city').selectmenu({
+        'placeholder': 'Город'
+    });
+
+    $('#filter-district').selectmenu({
+        'placeholder': 'Округ / район'
+    });
+
+    $('#filter-address-first').selectmenu({
+        'placeholder': 'Введите основной адрес'
+    });
+
+    $('#filter-apartment-first').selectmenu({
+        'placeholder': 'Номер'
+    });
+    
+    $('#filter-address-sec').selectmenu({
+        'placeholder': 'Введите альтернативный адрес'
+    });
+
+     $('#filter-apartment-sec').selectmenu({
+        'placeholder': 'Номер'
+    });
+
 })
