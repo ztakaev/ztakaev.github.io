@@ -1,10 +1,9 @@
 <svg width="431" height="471" viewBox="0 0 431 471" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<rect fill="#59b1e3" x="25" y="316" width="182" height="104" fill="black"/>
-	<rect fill="#59b1e3" x="222" y="316" width="182" height="104" fill="black"/>
-	<rect fill="#59b1e3" x="222" y="197" width="182" height="104" fill="black"/>
-	<rect fill="#59b1e3" x="25" y="197" width="182" height="104" fill="black"/>
-	<rect fill="#59b1e3" y="77" width="431" height="105" fill="black"/>
-	<path fill="#59b1e3" d="M295.5 97C313.758 78.5 354.5 42 320.5 13.5C273.768 -25.6726 177.968 86.3166 175 86.3166" stroke="black" stroke-width="9"/>
-	<path fill="#59b1e3" d="M127.921 90C107.485 81.988 68.7339 53.2229 99.5808 21.0542C127.921 -8.5 181.516 31.8073 206 59.6386" stroke="black" stroke-width="9"/>
-
+<rect x="25" y="316" width="182" height="104" fill="black"/>
+<rect x="222" y="316" width="182" height="104" fill="black"/>
+<rect x="222" y="197" width="182" height="104" fill="black"/>
+<rect x="25" y="197" width="182" height="104" fill="black"/>
+<rect y="77" width="431" height="105" fill="black"/>
+<path d="M295.5 97C313.758 78.5 354.5 42 320.5 13.5C273.768 -25.6726 177.968 86.3166 175 86.3166" stroke="black" stroke-width="9"/>
+<path d="M127.921 90C107.485 81.988 68.7339 53.2229 99.5808 21.0542C127.921 -8.5 181.516 31.8073 206 59.6386" stroke="black" stroke-width="9"/>
 </svg>
