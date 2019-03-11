@@ -1390,16 +1390,16 @@ html,body {
 @media screen and (min-width: 1000px){
     .section-selection h2, .title-constructor, 
     .review-title, .models h3 {
-        font-size: 4vh;
-        line-height: 6vh;
+        font-size: 32px;
+        line-height: 1.5em;
     } 
     .section-selection {
-        font-size: 2.2vh;
-        line-height: 3.5vh;
+        font-size: 24px;
+        line-height: 1.4em;
     }
     .section-list, .title-slider {
-        font-size: 3vh;
-        line-height: 4vh;
+        font-size: 24px;
+        line-height: 1.4em;
     }
     .converse .holder-text {
         font-size: 3vh;
@@ -1719,6 +1719,37 @@ html,body {
     .container {
         max-width: 280px;
     }
+    .holder-slider-product{
+        float: none;
+        width: 100%;
+    }
+    .slider-product{
+        padding: 0 40px;
+        margin: 0 0 30px;
+    }
+    .slider-product .slick-next, .slider-product .slick-prev{
+        position: absolute;
+        top: 50%;
+        margin: 0;
+        left: 0;
+        display: block!important;
+    }
+    .slider-product .slick-prev {
+        transform: rotate(90deg) rotateY(0deg);
+        -webkit-transform: rotate(90deg) rotateY(0deg);
+        -moz-transform: rotate(90deg) rotateY(0deg);
+        -o-transform: rotate(90deg) rotateY(0deg);
+        -ms-transform: rotate(90deg) rotateY(0deg);
+    }
+    .slider-product .slick-next{
+        left: auto;
+        right: 0;
+        transform: rotate(-90deg) rotateY(0deg);
+        -webkit-transform: rotate(-90deg) rotateY(0deg);
+        -moz-transform: rotate(-90deg) rotateY(0deg);
+        -o-transform: rotate(-90deg) rotateY(0deg);
+        -ms-transform: rotate(-90deg) rotateY(0deg);
+    }
     .banner__tab {
         display: none;
     }
@@ -1819,15 +1850,15 @@ html,body {
 }
 @media screen and (max-width: 650px){
     .section-selection .group{
-        display: flex;
+        /* display: flex;
         flex-direction: column-reverse;
-        align-content: center;
+        align-content: center; */
     }
     .want-list {
         overflow: visible;
         padding: 0;
     }
-    .holder-slider-product{
+    /* .holder-slider-product{
         float: none;
         width: 100%;
     }
@@ -1857,7 +1888,7 @@ html,body {
         -moz-transform: rotate(-90deg) rotateY(0deg);
         -o-transform: rotate(-90deg) rotateY(0deg);
         -ms-transform: rotate(-90deg) rotateY(0deg);
-    }
+    } */
     .list-models li{
         width: 100%;
         height: auto!important;

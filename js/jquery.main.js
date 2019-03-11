@@ -128,7 +128,7 @@ $(function(){
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 650,
+                breakpoint: 767,
                 settings: {
                     vertical: false,
                     slidesToShow: 1,
