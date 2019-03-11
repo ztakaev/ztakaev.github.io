@@ -8,7 +8,7 @@
     <title>DeLonghi</title>
 </head>
 
-<body>
+<body class="body_dark">
 	<!doctype html>
 	<html lang="ru">
 	
@@ -162,184 +162,171 @@
 			</nav>
 		</header>
 
+		<section class="profile profile_small">
+	        <div class="container">
+	            <div class="profile-info">
+	                <div class="profile-user">
+	                    <div class="profile-user__avatar" style="background-image: url(assets/i/user.png"></div>
+	                    <span class="profile-user__name">
+							<a href="#" class="profile-user__btn"><img src="assets/i/icons/logout.png" alt="Выход"></a>
+		                    Иванов Иван
+	                	</span>
+	                </div>
+	                <div class="profile-contacts">
+	                    <a href="#" class="profile-contacts__edit">
+	                        <img src="assets/i/icons/pen.png" alt="Редактирование">
+	                        Редактировать профиль
+	                    </a>
+	                </div>
+	            </div>
+	            <div class="bonus bonus_small">
+	                <span class="bonus__subtitle">У вас всего <span class="bonus__count">3000 бонусов</span></span>
+	                
+	                <a href="#" class="btn bonus__btn">Потратить бонусы</a>
+	            </div>
+	        </div>
+	    </section>
 		
-		<section class="profile">
+		<section class="edit-profile">
 			<div class="container">
-				<div class="profile-info">
-					<div class="profile-user">
-						<div class="profile-user__avatar" style="background-image: url(assets/i/user.png"></div>
-						<span class="profile-user__name">Иванов Иван</span>
-						<a href="#" class="btn profile-user__btn">Редактировать</a>
+				<div class="edit-profile__wrap">
+					<div class="profile_small">
+						<div class="profile-user profile-user_edit">
+			                <div class="profile-user__avatar profile-user__avatar_edit" style="background-image: url(assets/i/user.png"></div>
+			                <span class="profile-user__name">
+								<a href="#" class="profile-user__btn"><img src="assets/i/icons/logout.png" alt="Выход"></a>
+			                    <h3 class="edit-profile__title">Информация о профиле</h3>
+			            	</span>
+			            </div>
 					</div>
-					<div class="profile-contacts">
-						<h5 class="profile-contacts__title">Информация о профиле</h5>
-						<ul class="profile-contacts__list">
-							<li>
-								<img class="profile-contacts__icon" src="assets/i/icons/map-marker.svg">
-								улица Константиновская, 26, Киев, 02000
-							</li>
-							<li>
-								<img class="profile-contacts__icon" src="assets/i/icons/telephone.svg">
-								+ 7 (902) 568 58 98
-							</li>
-							<li>
-								<img class="profile-contacts__icon" src="assets/i/icons/envelope.svg">
-								E-mail@mail.ru
-							</li>
-						</ul>
+	
+					<div class="edit-form">
+						<form action="#" class="edit-form__data">
+							<h4 class="edit-form__title">Личная информация</h4>
+	
+							<div class="edit-form__el">
+								<span class="edit-form__subtitle">Ваше имя <sup>*</sup></span>
+								<input type="text" placeholder="Введите ваше имя">
+							</div>
+							<div class="edit-form__el">
+								<span class="edit-form__subtitle">Ваша фамилия</span>
+								<input type="text" placeholder="Введите вашу фамилию">
+							</div>
+							<div class="edit-form__el">
+								<span class="edit-form__subtitle">Ваше отчество</span>
+								<input type="text" placeholder="Введите ваше отчество">
+							</div>
+	
+							<div class="edit-form__el edit-form__el_date">
+								<span class="edit-form__subtitle">Дата рождения</span>
+								<select class="filter" id="filter-day">
+									<option>1</option>
+									<option>1</option>
+									<option>1</option>
+								</select>
+								<select class="filter" id="filter-month">
+									<option>1</option>
+									<option>1</option>
+									<option>1</option>
+								</select>
+								<select class="filter" id="filter-year">
+									<option>1</option>
+									<option>1</option>
+									<option>1</option>
+								</select>
+							</div>
+	
+							<div class="edit-form__el">
+								<span class="edit-form__subtitle">E-mail (логин) <sup>*</sup></span>
+								<input type="mail">
+							</div>
+	
+							<div class="edit-form__el">
+								<span class="edit-form__subtitle">Пароль (введённый пароль заменит текущий) <sup>*</sup></span>
+								<input type="password">
+							</div>
+	
+							<h4 class="edit-form__title">Контактные данные</h4>
+	
+							<div class="edit-form__el">
+								<span class="edit-form__subtitle">Телефон <sup>*</sup></span>
+								<input type="phone">
+							</div>
+	
+							<div class="edit-form__el">
+								<span class="edit-form__subtitle">Город <sup>*</sup></span>
+								<select class="filter" id="filter-city">
+									<option>1</option>
+									<option>1</option>
+									<option>1</option>
+								</select>
+							</div>
+	
+							<div class="edit-form__el">
+								<span class="edit-form__subtitle">Округ / район <sup>*</sup></span>
+								<select class="filter" id="filter-district">
+									<option>1</option>
+									<option>1</option>
+									<option>1</option>
+								</select>
+							</div>
+	
+							<div class="edit-form__el edit-form__el_address">
+								<div class="edit-form__el_address1">
+									<span class="edit-form__subtitle">Название улицы, дом</span>
+									<select class="filter" id="filter-address-first">
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+									</select>
+								</div>
+								<div class="edit-form__el_address2">
+									<span class="edit-form__subtitle">Квартира</span>
+									<select class="filter" id="filter-apartment-first">
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+									</select>
+								</div>
+							</div>
+	
+							<div class="edit-form__el edit-form__el_address">
+								<div class="edit-form__el_address1">
+									<span class="edit-form__subtitle">Название улицы, дом</span>
+									<select class="filter" id="filter-address-sec">
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+									</select>
+								</div>
+								<div class="edit-form__el_address2">
+									<span class="edit-form__subtitle">Квартира</span>
+									<select class="filter" id="filter-apartment-sec">
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+										<option>1</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="edit-form__el">
+								<span class="edit-form__subtitle">Почтовый индекс</span>
+								<input type="text">
+							</div>
+							<div class="edit-form__btns">
+								<a href="#" class="edit-form__btn btn">назад</a>
+								<button class="edit-form__btn edit-form__btn_save btn">сохранить</button>
+							</div>
+						</form>
 					</div>
-				</div>
-				<div class="bonus">
-					<h5 class="bonus__title">Накопленные бонусы</h5>
-					<span class="bonus__subtitle">У вас всего</span>
-					<span class="bonus__count">3000</span>
-					<a href="#" class="btn bonus__btn">Проверить</a>
 				</div>
 				
 			</div>
 		</section>
 	
-		<section class="offers">
-			<div class="container">
-				<h2 class="section-title">Специальные предложения</h2>
-				<div class="offers__list">
-					<div class="offers__item">
-						<img src="assets/i/offers/1.png" class="offers__img img-fluid">
-						<h4 class="offers__title">Подарки за баллы</h4>
-						<p class="offers__desc">
-							Спецпредложения оставляем. <br>
-							Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн курсы с возможностью проскролить то что внутри этих блоков есть
-						</p>
-						<a href="#" class="btn offers__btn">Подробнее</a>
-					</div>
-	
-					<div class="offers__item">
-						<img src="assets/i/offers/2.png" class="offers__img img-fluid">
-						<h4 class="offers__title">Мероприятия</h4>
-						<p class="offers__desc">
-							Спецпредложения оставляем. <br>
-							Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн
-						</p>
-						<a href="#" class="btn offers__btn">Подробнее</a>
-					</div>
-	
-					<div class="offers__item">
-						<img src="assets/i/offers/3.png" class="offers__img img-fluid">
-						<h4 class="offers__title">Онлайн курсы</h4>
-						<p class="offers__desc">
-							Спецпредложения оставляем. <br>
-							Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн курсы с возможностью проскролить то что внутри этих блоков есть
-						</p>
-						<a href="#" class="btn offers__btn">Подробнее</a>
-					</div>
-	
-				</div>
-			</div>
-		</section>
-		
-		<section class="recommended container">
-			<h2 class="section-title">Рекомендованные товары</h2>
-			<div class="recommended-list">
-				<!-- <button class="recommended-list__arrow"><i class="fas fa-long-arrow-alt-left"></i></button> -->
-				<div id="recommendedSlider" class="recommended-list__slider">
-					<div class="recommended-list__item">
-						<div class="recommended-list__img">
-							<img class="img-fluid" src="assets/i/recommended/1.png">
-						</div>
-					</div>
-					<div class="recommended-list__item">
-						<div class="recommended-list__img">
-							<img class="img-fluid" src="assets/i/recommended/2.png">
-						</div>
-					</div>
-					<div class="recommended-list__item">
-						<div class="recommended-list__img">
-							<img class="img-fluid" src="assets/i/recommended/3.png">
-						</div>
-					</div>
-					<div class="recommended-list__item">
-						<div class="recommended-list__img recommended-list__item_act">
-							<img class="img-fluid" src="assets/i/recommended/4.png">
-						</div>
-					</div>
-				</div>
-			</div>
-	
-			<div class="recommended-show">
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
-					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер1 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facilis suscipit amet nisi laboriosam! Quidem consectetur cupiditate sed dolorem iusto.
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
-					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер2 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nulla nam debitis enim expedita libero, nobis excepturi qui. Excepturi itaque, esse nostrum nesciunt consequuntur distinctio. Ducimus ab architecto dolor laudantium!
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
-					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер3 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum officia minus quos tempora natus nulla laborum vel velit voluptates, suscipit neque ab eius maxime modi odio nisi atque cupiditate facere eligendi. Omnis, amet. Quisquam, atque dolorem dolores deleniti ducimus quae?
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
-					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер4 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								нужен для очистки вашей кофемашины или чайника, кофе идеально подойдет для приготовления кофе в кофемашины
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-			</div>
-		</section>
 
 <script src="assets/js/app.js"></script>
 </body>
