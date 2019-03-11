@@ -1,15 +1,678 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Game</title>
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-<canvas id="canvas"></canvas>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>eldorado</title>
 
-	
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width" />
+		<meta name="format-detection" content="telephone=no"/>
+		
 
-<script src="js/main.js"></script>
-</body>
+		<link rel="stylesheet" href="css/slick.css" type="text/css" />
+		<link rel="stylesheet" href="css/all.css" type="text/css" />
+		<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" />
+
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/libs/slick.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.matchHeight.js"></script>
+		<script type="text/javascript" src="js/jquery.main.js"></script>
+		<!--[if lte IE 8]>
+		<script type="text/javascript" src="js/libs/ie.js"></script><![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">			
+			<div class="container">
+				<div class="banner">
+					<img src="images/banner_desc.jpg" class="banner__desc banner__img">
+					<img src="images/banner_tab.jpg" class="banner__tab banner__img">
+					<img src="images/banner_mob.jpg" class="banner__mob banner__img">
+				</div>
+			</div>
+			<div id="main">
+				<div id="anchor2" class="container">
+					<div class="section-selection">
+						<h2>Выбери свой блендер</h2>
+						<p>Предлагаем вам ответить на несколько вопросов, чтобы подобрать идеальную <br>модель блендера Braun, созданную специально для вас</p>
+						<form class="filter">
+							<fieldset>
+								<div class="group">
+									<div class="holder-slider-product">
+										<span class="title-slider">Вам подходит:</span>
+										<div class="slider-product">
+											<div class="slide unique salat cutlets pure pie-free best-product">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-45.png" alt="img">
+													</div>
+													<p>Braun Multiquick 9 MQ9087X</p>
+													<div class="price">
+														<span class="ruble">12 990 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+											<div class="slide pie-free best-price best-price-quality">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-45.png" alt="img">
+													</div>
+													<p>Braun Multiquick 9 MQ9087X</p>
+													<div class="price">
+														<span class="ruble">12 990 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+											<div class="slide unique coffee best-product">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-46.png" alt="img">
+													</div>
+													<p>Braun Multiquick 9 MQ9038X</p>
+													<div class="price">
+														<span class="ruble">9 990 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+											<div class="slide coffee best-price best-price-quality">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-46.png" alt="img">
+													</div>
+													<p>Braun Multiquick 9 MQ9038X</p>
+													<div class="price">
+														<span class="ruble">9 990 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+											<div class="slide unique dish-one salat best-product">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-47.png" alt="img">
+													</div>
+													<p>Braun Multiquick 9 MQ9005X</p>
+													<div class="price">
+														<span class="ruble">7 990 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+											<div class="slide unique dish-one salat cutlets best-price-quality">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-48.png" alt="img">
+													</div>
+													<p>Braun Multiquick 7 MQ735</p>
+													<div class="price">
+														<span class="ruble">6 190 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+											<div class="slide unique pure best-price-quality">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-49.png" alt="img">
+													</div>
+													<p>Braun Multiquick 5 Vario MQ5137</p>
+													<div class="price">
+														<span class="ruble">7 490 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+											<div class="slide pure best-price">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-49.png" alt="img">
+													</div>
+													<p>Braun Multiquick 5 Vario MQ5137</p>
+													<div class="price">
+														<span class="ruble">7 490 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+											<div class="slide unique dish-one salat cutlets best-price-quality">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-50.png" alt="img">
+													</div>
+													<p>Braun Multiquick 5 Vario MQ5035</p>
+													<div class="price">
+														<span class="ruble">5 390 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+											<div class="slide limonade best-product best-price-quality">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-53.png" alt="img">
+													</div>
+													<p>Braun Multiquick 3 MQ3045</p>
+													<div class="price">
+														<span class="ruble">4 990 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+											<div class="slide unique cutlets limonade best-price">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-53.png" alt="img">
+													</div>
+													<p>Braun Multiquick 3 MQ3045</p>
+													<div class="price">
+														<span class="ruble">4 990 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+											<div class="slide unique dish-one salat best-price">
+												<div class="holder-block">
+													<div class="holder-img">
+														<img src="images/bg-52.png" alt="img">
+													</div>
+													<p>Braun Multiquick 3 MQ3025</p>
+													<div class="price">
+														<span class="ruble">3 790 <span>руб.</span></span>
+														<a class="btn-buy" href="#"><span>Купить</span></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<ul class="want-list">
+										<li>
+											<span class="section-list">Я бы хотел готовить:</span>
+											<ol class="list-radio filter-list-radio">
+												<li>
+													<label>
+														<input type="checkbox" name="radio" value=".dish-one">
+														<div class="holder-img">
+															<div class="holder">
+																<span>суп-пюре</span>
+															<img src="images/bg-21.png" alt="img">
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="checkbox" name="radio" value=".dish-one">
+														<div class="holder-img">
+															<div class="holder">
+																<span>оладьи</span>
+															<img src="images/bg-22.png" alt="img">
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="checkbox"  name="radio" value=".dish-one">
+														<div class="holder-img">
+															<div class="holder">
+																<span>молочный<br>коктейл</span>
+															<img src="images/bg-23.png" alt="img">
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="checkbox"  name="radio" value=".dish-one">
+														<div class="holder-img">
+															<div class="holder">
+																<span>соус</span>
+															<img src="images/bg-24.png" alt="img">
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="checkbox"  name="radio" value=".salat">
+														<div class="holder-img">
+															<div class="holder">
+																<span>салат/<br>
+																заправка</span>
+															<img src="images/bg-25.png" alt="img">
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input class="special" type="checkbox"  name="radio"  value=".limonade">
+														<div class="holder-img">
+															<div class="holder">
+																<span>лимонад</span>
+															<img src="images/bg-26.png" alt="img">
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input class="special" type="checkbox"  name="radio"  value=".pure">
+														<div class="holder-img">
+															<div class="holder">
+																<span>пюре</span>
+															<img src="images/bg-27.png" alt="img" >
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input class="special" type="checkbox"  name="radio"  value=".coffee">
+														<div class="holder-img">
+															<div class="holder">
+																<span>молотый<br>кофе/специи </span>
+															<img src="images/bg-28.png" alt="img">
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input class="special" type="checkbox"  name="radio" value=".pie-free">
+														<div class="holder-img">
+															<div class="holder">
+																<span>пирожки</span>
+															<img src="images/bg-29.png" alt="img">
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="checkbox"  name="radio"  value=".cutlets">
+														<div class="holder-img">
+															<div class="holder">
+																<span>котлеты</span>
+															<img src="images/bg-30.png" alt="img">
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="checkbox"  name="radio"  value=".dish-one">
+														<div class="holder-img">
+															<div class="holder">
+																<span>смузи</span>
+															<img src="images/bg-31.png" alt="img">
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input class="special" type="checkbox"  name="radio" value=".pie-free">
+														<div class="holder-img">
+															<div class="holder">
+																<span>картофель<br>фри</span>
+															<img src="images/bg-32.png" alt="img">
+															</div>
+														</div>
+													</label>
+												</li>
+											</ol>
+										</li>
+										<li>
+											<span class="section-list">Я готовлю:</span>
+											<ol class="list-radio">
+												<li>
+													<label>
+														<input type="radio" name="radio1">
+														<div class="radio-text">
+															<div>
+																<span><span>365</span><br>дней</span>
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio1">
+														<div class="radio-text">
+															<div>
+																<span><span>2-3</span>дня<br>в неделю</span>
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio1">
+														<div class="radio-text">
+															<div>
+																<span><span>1</span>день<br>в неделю</span>
+															</div>
+														</div>
+													</label>
+												</li>
+											</ol>
+										</li>
+										<li>
+											<span class="section-list">Для меня важно:</span>
+											<ol class="list-radio filter-list-radio most-important-radio">
+												<li>
+													<label>
+														<input type="radio" name="radio2" value=".best-price-quality">
+														<div class="radio-text">
+															<div>
+																<span>цена<br>качество</span>
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio2" value=".best-product">
+														<div class="radio-text">
+															<div>
+																<span>лучший<br>продукт</span>
+															</div>
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio2" value=".best-price">
+														<div class="radio-text">
+															<div>
+																<span>низкая<br>цена</span>
+															</div>
+														</div>
+													</label>
+												</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+								<div class="my-constructor">
+									<span class="title-constructor">Собери свой блендер</span>
+									<div id="primary" class="constructor-group">
+										<div class="constructor-one">
+											<span class="title-blander">Блендер с основными <br>функциями</span>
+											<ol class="list-radio">
+												<li>
+													<label>
+														<input type="radio" name="radio4" value="0" checked="checked">
+														<div class="holder-img">
+															<img src="images/bg-35.png" alt="img">
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio4" value="1">
+														<div class="holder-img">
+															<img src="images/bg-36.png" alt="img">
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio4" value="2">
+														<div class="holder-img">
+															<img src="images/bg-37.png" alt="img">
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio4" value="3">
+														<div class="holder-img">
+															<img src="images/bg-38.png" alt="img">
+														</div>
+													</label>
+												</li>
+											</ol>
+										</div>
+										<div class="constructor-two">
+											<span class="title-blander">Блендер с <br>дополнительными <br>функциями</span>
+											<ol class="list-radio">
+												<li>
+													<label>
+														<input type="radio"  name="radio4" value="4">
+														<div class="holder-img">
+															<img src="images/bg-40.png" alt="img">
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio4" value="5">
+														<div class="holder-img">
+															<img src="images/bg-41.png" alt="img">
+														</div>
+													</label>
+												</li>
+											</ol>
+										</div>
+										<div class="constructor-three">
+											<span class="title-blander">Больше <br>чем блендер</span>
+											<ol class="list-radio">
+												<li>
+													<label>
+														<input type="radio" name="radio4" value="6">
+														<div class="holder-img">
+															<img src="images/bg-42.png" alt="img">
+														</div>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" name="radio4" value="7">
+														<div class="holder-img">
+															<img src="images/bg-43.png" alt="img">
+														</div>
+													</label>
+												</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+								<div id="secondary">
+									<div class="block-secondary open">
+										<div class="secondary-flex">
+											<div class="holder-text">
+												<span>Съёмная насадка-блендер</span>
+												<p>Вам будет проще простого измельчать продукты именно до требуемых размеров.</p>
+											</div>
+											<div class="holder-img">
+												<img src="images/bg-61.png" alt="img">
+											</div>
+										</div>
+									</div>
+									<div class="block-secondary">
+										<div class="secondary-flex">
+											<div class="holder-text">
+												<span>Мерный стакан</span>
+												<p>Вам будет проще простого измельчать продукты именно до требуемых размеров.</p>
+											</div>
+											<div class="holder-img">
+												<img src="images/bg-62.png" alt="img">
+											</div>
+										</div>
+									</div>
+									<div class="block-secondary">
+										<div class="secondary-flex">
+											<div class="holder-text">
+												<span>Венчик для взбивания</span>
+												<p>Для легкого взбивания белков в крутую пену, сливок и других ингредиентов</p>
+											</div>
+											<div class="holder-img">
+												<img src="images/bg-63.png" alt="img">
+											</div>
+										</div>
+									</div>
+									<div class="block-secondary">
+										<div class="secondary-flex">
+											<div class="holder-text">
+												<span>Измельчитель</span>
+												<p>Позволяет измельчать лук, зелень, сыр, и даже небольшие порции мяса или рыбы</p>
+											</div>
+											<div class="holder-img">
+												<img src="images/bg-64.png" alt="img">
+											</div>
+										</div>
+									</div>
+									<div class="block-secondary">
+										<div class="secondary-flex">
+											<div class="holder-text">
+												<span>Насадка для пюре</span>
+												<p>Для приготовления нежного картофельного пюре однородной консистенции (а также пюре из других отварных овощей)</p>
+											</div>
+											<div class="holder-img">
+												<img src="images/bg-65.png" alt="img">
+											</div>
+										</div>
+									</div>
+									<div class="block-secondary">
+										<div class="secondary-flex">
+											<div class="holder-text">
+												<span>Насадка-мельничка</span>
+												<p>Позволяет быстро измельчать специи, бобы или семена в порошок прямо внутрь легко-очищаемой стальной чаши</p>
+											</div>
+											<div class="holder-img">
+												<img src="images/bg-66.png" alt="img">
+											</div>
+										</div>
+									</div>
+									<div class="block-secondary">
+										<div class="secondary-flex">
+											<div class="holder-text">
+												<span>Насадка кухонный комбайн</span>
+												<p>Сочетает в себе возможности терки, измельчителя и слайсера для нарезания продуктов ломтиками, а также имеет функцию нарезки картофеля фри</p>
+											</div>
+											<div class="holder-img">
+												<img src="images/bg-67.png" alt="img">
+											</div>
+										</div>
+									</div>
+									<div class="block-secondary">
+										<div class="secondary-flex">
+											<div class="holder-text">
+												<span>Кувшин-измельчитель</span>
+												<p>Используется для колки льда и измельчения всевозможных продуктов, включая мясо, сыр и орехи</p>
+											</div>
+											<div class="holder-img">
+												<img src="images/bg-68.png" alt="img">
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="video-block">
+					<div class="container">
+						<span class="review-title"><span>Видео</span></span>
+						<div class="group">
+							<div class="video">
+								<iframe width="100%" height="315" src="https://www.youtube.com/embed/JHdKu1bwbP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="video">
+								<iframe width="100%" height="315" src="https://www.youtube.com/embed/JHdKu1bwbP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="anchor3" class="container">
+					<div class="models">
+						<h3>Модели и цены</h3>
+						<ul class="list-models">
+							<!--
+							<li>
+								<div class="holder-block">
+									<div class="holder-img">
+									<img src="images/bg-45.png" alt="img">
+								</div>
+								<p>Braun Multiquick 9 MQ9087X</p>
+								<div class="price">
+									<span class="ruble">12 990 <span>руб.</span></span>
+									<a class="btn-buy" href="#" tabindex="0"><span>Купить</span></a>
+								</div>
+								</div>
+							</li>
+							-->
+							<li>
+								<div class="holder-block">
+									<img src="images/item1.png" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="holder-block">
+									<img src="images/item2.png" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="holder-block">
+									<img src="images/item1.png" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="holder-block">
+									<img src="images/item2.png" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="holder-block">
+									<img src="images/item1.png" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="holder-block">
+									<img src="images/item2.png" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="holder-block">
+									<img src="images/item1.png" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="holder-block">
+									<img src="images/item2.png" alt="">
+								</div>
+							</li>
+							
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="btn-window" href="#">
+			<span>Лучшее предложение</span>
+		</a>
+		<div class="pop-up-window">
+			<span class="title-window">Лучшее предложение</span>
+			<div class="holder-block">
+				<div class="holder-img">
+					<span>Braun Multiquick 7 MQ745</span>
+					<img src="images/bg-72.png" alt="img">
+				</div>
+				<div class="markdown">
+					<div>
+						<span class="crossed-out">7000 руб.</span>
+						<span>5000 <em>руб.</em></span>
+					</div>
+					<div>
+						<a class="btn-green" href="#">Купить</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
