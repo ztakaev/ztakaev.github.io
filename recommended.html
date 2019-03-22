@@ -8,7 +8,7 @@
     <title>DeLonghi</title>
 </head>
 
-<body>
+<body class="body_dark">
 	<!doctype html>
 	<html lang="ru">
 	
@@ -162,184 +162,304 @@
 			</nav>
 		</header>
 
-		
-		<section class="profile">
-			<div class="container">
-				<div class="profile-info">
-					<div class="profile-user">
-						<div class="profile-user__avatar" style="background-image: url(assets/i/user.png"></div>
-						<span class="profile-user__name">Иванов Иван</span>
-						<a href="#" class="btn profile-user__btn">Редактировать</a>
-					</div>
-					<div class="profile-contacts">
-						<h5 class="profile-contacts__title">Информация о профиле</h5>
-						<ul class="profile-contacts__list">
-							<li>
-								<img class="profile-contacts__icon" src="assets/i/icons/map-marker.svg">
-								улица Константиновская, 26, Киев, 02000
-							</li>
-							<li>
-								<img class="profile-contacts__icon" src="assets/i/icons/telephone.svg">
-								+ 7 (902) 568 58 98
-							</li>
-							<li>
-								<img class="profile-contacts__icon" src="assets/i/icons/envelope.svg">
-								E-mail@mail.ru
-							</li>
-						</ul>
-					</div>
+	
+	<section class="profile profile_small">
+	    <div class="container">
+	        <div class="profile-info">
+	            <div class="profile-user">
+	                <div class="profile-user__avatar" style="background-image: url(assets/i/user.png"></div>
+	                <span class="profile-user__name">
+						<a href="#" class="profile-user__btn"><img src="assets/i/icons/logout.png" alt="Выход"></a>
+	                    Иванов Иван
+	            	</span>
+	            </div>
+	            <div class="profile-contacts">
+	                <a href="#" class="profile-contacts__edit">
+	                    <img src="assets/i/icons/pen.png" alt="Редактирование">
+	                    Редактировать профиль
+	                </a>
+	            </div>
+	        </div>
+	        <div class="bonus bonus_small">
+	            <span class="bonus__subtitle">У вас всего <span class="bonus__count">3000 бонусов</span></span>
+	            
+	            <a href="#" class="btn bonus__btn">Потратить бонусы</a>
+	        </div>
+	    </div>
+	</section>
+	
+	<section class="selection">
+		<div class="container">
+			<div class="selection-main">
+				<div class="selection-main__img">
+					<img src="assets/i/selection/main1.png">
 				</div>
-				<div class="bonus">
-					<h5 class="bonus__title">Накопленные бонусы</h5>
-					<span class="bonus__subtitle">У вас всего</span>
-					<span class="bonus__count">3000</span>
-					<a href="#" class="btn bonus__btn">Проверить</a>
+				<div class="selection-main__info">
+					<h3 class="selection-main__title">
+						<span>Кофемашина</span> DeLonghi ECAM 22.360 S Magnifica S
+					</h3>
+					<p class="selection-main__text">
+						Для вашей кофемашины мы подобрали Вам несколько товаров, которые могут пригодиться
+					</p>
+				</div>
+				<div class="selection-main__wrap">
+					<span class="selection-main__date">21 июля 2018</span>
+					<span class="selection-main__question">Как Вам кофемашина?</span>
+					<a href="#" class="btn selection-main__btn">Оставить отзыв</a>
+				</div>
+			</div>
+			
+			<h3 class="star-title star-title__selection">
+				Рекомендуемый товар
+			</h3>
+			
+			<div class="selection__list">
+				<div class="selection-item">
+					<div class="selection-item__img">
+						<img src="assets/i/selection/selection1.png">
+						<span class="selection-item__bonus">
+							<b>+155</b> бонусов
+						</span>
+					</div>
+					<h4 class="selection-item__title">Кофемолка DeLonghi KG 49 </h4>
+					<p class="selection-item__desc">
+						Даст вам возможность делать помол кофе разной 
+						степени от мелкого до грубого.Что позволяет 
+						удовлетворить вкусовые потребности 
+						настоящих гурманов.
+					</p>
+					<span class="selection-item__price">25 129 руб.</span>
+					<div class="selection-item__btns">
+						<a href="#" class="btn selection-item__buy">Купить</a>
+						<a href="#" class="selection-item__more">Подробнее</a>
+					</div>
 				</div>
 				
-			</div>
-		</section>
-	
-		<section class="offers">
-			<div class="container">
-				<h2 class="section-title">Специальные предложения</h2>
-				<div class="offers__list">
-					<div class="offers__item">
-						<img src="assets/i/offers/1.png" class="offers__img img-fluid">
-						<h4 class="offers__title">Подарки за баллы</h4>
-						<p class="offers__desc">
-							Спецпредложения оставляем. <br>
-							Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн курсы с возможностью проскролить то что внутри этих блоков есть
-						</p>
-						<a href="#" class="btn offers__btn">Подробнее</a>
+				<div class="selection-item">
+					<div class="selection-item__img">
+						<img src="assets/i/selection/selection2.png">
+						<span class="selection-item__bonus">
+							<b>+1200</b> бонусов
+						</span>
 					</div>
-	
-					<div class="offers__item">
-						<img src="assets/i/offers/2.png" class="offers__img img-fluid">
-						<h4 class="offers__title">Мероприятия</h4>
-						<p class="offers__desc">
-							Спецпредложения оставляем. <br>
-							Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн
-						</p>
-						<a href="#" class="btn offers__btn">Подробнее</a>
-					</div>
-	
-					<div class="offers__item">
-						<img src="assets/i/offers/3.png" class="offers__img img-fluid">
-						<h4 class="offers__title">Онлайн курсы</h4>
-						<p class="offers__desc">
-							Спецпредложения оставляем. <br>
-							Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн курсы с возможностью проскролить то что внутри этих блоков есть
-						</p>
-						<a href="#" class="btn offers__btn">Подробнее</a>
-					</div>
-	
-				</div>
-			</div>
-		</section>
-		
-		<section class="recommended container">
-			<h2 class="section-title">Рекомендованные товары</h2>
-			<div class="recommended-list">
-				<!-- <button class="recommended-list__arrow"><i class="fas fa-long-arrow-alt-left"></i></button> -->
-				<div id="recommendedSlider" class="recommended-list__slider">
-					<div class="recommended-list__item">
-						<div class="recommended-list__img">
-							<img class="img-fluid" src="assets/i/recommended/1.png">
-						</div>
-					</div>
-					<div class="recommended-list__item">
-						<div class="recommended-list__img">
-							<img class="img-fluid" src="assets/i/recommended/2.png">
-						</div>
-					</div>
-					<div class="recommended-list__item">
-						<div class="recommended-list__img">
-							<img class="img-fluid" src="assets/i/recommended/3.png">
-						</div>
-					</div>
-					<div class="recommended-list__item">
-						<div class="recommended-list__img recommended-list__item_act">
-							<img class="img-fluid" src="assets/i/recommended/4.png">
-						</div>
-					</div>
-				</div>
-			</div>
-	
-			<div class="recommended-show">
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
-					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер1 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facilis suscipit amet nisi laboriosam! Quidem consectetur cupiditate sed dolorem iusto.
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
+					<h4 class="selection-item__title">Кофе в зернах Blasercafe Lilla & Rose</h4>
+					<p class="selection-item__desc">
+						Этот кофе представляет собой сочетание хорошо 
+						прожаренных зерен двух популярных сортов
+						и отличается насыщенностью вкуса. 
+					</p>
+					<span class="selection-item__price">5 099 руб.</span>
+					<div class="selection-item__btns">
+						<a href="#" class="btn selection-item__buy">Купить</a>
+						<a href="#" class="selection-item__more">Подробнее</a>
 					</div>
 				</div>
 	
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
+				<div class="selection-item">
+					<div class="selection-item__img">
+						<img src="assets/i/selection/selection3.png">
+						<span class="selection-item__bonus">
+							<b>+20</b> бонусов
+						</span>
 					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер2 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nulla nam debitis enim expedita libero, nobis excepturi qui. Excepturi itaque, esse nostrum nesciunt consequuntur distinctio. Ducimus ab architecto dolor laudantium!
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
-					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер3 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum officia minus quos tempora natus nulla laborum vel velit voluptates, suscipit neque ab eius maxime modi odio nisi atque cupiditate facere eligendi. Omnis, amet. Quisquam, atque dolorem dolores deleniti ducimus quae?
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
-					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер4 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								нужен для очистки вашей кофемашины или чайника, кофе идеально подойдет для приготовления кофе в кофемашины
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
+					<h4 class="selection-item__title">Термостакан DeLonghi SC 056</h4>
+					<p class="selection-item__desc">
+						Фирменный термостакан DeLonghi The Adventurer. 
+						Объем: 350 мл. Двойные стенки. Не создает конденсат. Крышка в комплекте.
+					</p>
+					<span class="selection-item__price">1 000 руб.</span>
+					<div class="selection-item__btns">
+						<a href="#" class="btn selection-item__buy">Купить</a>
+						<a href="#" class="selection-item__more">Подробнее</a>
 					</div>
 				</div>
 	
 			</div>
-		</section>
+	
+		</div>
+	</section>
+	
+	
+	<section class="selection">
+		<div class="container">
+			<div class="selection-main">
+				<div class="selection-main__img">
+					<img src="assets/i/selection/main1.png">
+				</div>
+				<div class="selection-main__info">
+					<h3 class="selection-main__title">
+						<span>Чайник</span> DeLonghi KBI 2001 CP Distinta
+					</h3>
+					<p class="selection-main__text">
+						Для вашего чайника мы подобрали Вам несколько товаров, которые могут пригодиться
+					</p>
+				</div>
+				<div class="selection-main__wrap">
+					<span class="selection-main__date">21 июля 2018</span>
+					<span class="selection-main__question">Как Вам чайник?</span>
+					<a href="#" class="btn selection-main__btn">Оставить отзыв</a>
+				</div>
+			</div>
+			
+			<h3 class="star-title star-title__selection">
+				Рекомендуемый товар
+			</h3>
+			
+			<div class="selection__list">
+				<div class="selection-item">
+					<div class="selection-item__img">
+						<img src="assets/i/selection/selection4.png">
+						<span class="selection-item__bonus">
+							<b>+155</b> бонусов
+						</span>
+					</div>
+					<h4 class="selection-item__title">Кофе молотый Jaguari Gourmet </h4>
+					<p class="selection-item__desc">
+						Этот превосходный кофе из отборной, 
+						свежесобранной (вручную) и помолотой арабики 
+						насытит энергией ваш новый день. 
+					</p>
+					<span class="selection-item__price">4 599  руб.</span>
+					<div class="selection-item__btns">
+						<a href="#" class="btn selection-item__buy">Купить</a>
+						<a href="#" class="selection-item__more">Подробнее</a>
+					</div>
+				</div>
+				
+				<div class="selection-item">
+					<div class="selection-item__img">
+						<img src="assets/i/selection/selection5.png">
+						<span class="selection-item__bonus">
+							<b>+1200</b> бонусов
+						</span>
+					</div>
+					<h4 class="selection-item__title">Вспениватель молока DeLonghi EMFI CP</h4>
+					<p class="selection-item__desc">
+						Вспениватель молока DeLonghi EMFI CP
+						выполнен в изысканном и аристократичном дизайне. 
+						Это один из стильных приборов дизайнерской
+						коллекции Distinta для приготовления вкусного завтрака.  
+					</p>
+					<span class="selection-item__price">17 999 руб.</span>
+					<div class="selection-item__btns">
+						<a href="#" class="btn selection-item__buy">Купить</a>
+						<a href="#" class="selection-item__more">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="selection-item">
+					<div class="selection-item__img">
+						<img src="assets/i/selection/selection6.png">
+						<span class="selection-item__bonus">
+							<b>+205</b> бонусов
+						</span>
+					</div>
+					<h4 class="selection-item__title">Кофеварка DeLonghi ECP 33.21 R</h4>
+					<p class="selection-item__desc">
+						Простая бытовая кофеварка ручного типа <br>
+						DeLonghi ECP 33.21 R вполне в состоянии качественно приготовить сразу две порции кофе. <br>
+						Быстро и без лишних усилий.
+					</p>
+					<span class="selection-item__price">35 159 руб.</span>
+					<div class="selection-item__btns">
+						<a href="#" class="btn selection-item__buy">Купить</a>
+						<a href="#" class="selection-item__more">Подробнее</a>
+					</div>
+				</div>
+	
+			</div>
+	
+		</div>
+	</section>
+	
+	
+	<section class="selection">
+		<div class="container">
+			<div class="selection-main">
+				<div class="selection-main__img">
+					<img src="assets/i/selection/main3.png">
+				</div>
+				<div class="selection-main__info">
+					<h3 class="selection-main__title">
+						<span>Микроволновая печь</span> DeLonghi MW 30 F Silver
+					</h3>
+					<p class="selection-main__text">
+						Для вашей микроволновой печи мы подобрали Вам несколько товаров, которые могут пригодиться
+					</p>
+				</div>
+				<div class="selection-main__wrap">
+					<span class="selection-main__date">21 июля 2018</span>
+					<span class="selection-main__question">Как Вам <br> микроволновая печь?</span>
+					<a href="#" class="btn selection-main__btn">Оставить отзыв</a>
+				</div>
+			</div>
+			
+			<h3 class="star-title star-title__selection">
+				Рекомендуемый товар
+			</h3>
+			
+			<div class="selection__list">
+				<div class="selection-item">
+					<div class="selection-item__img">
+						<img src="assets/i/selection/selection7.png">
+						<span class="selection-item__bonus">
+							<b>+155</b> бонусов
+						</span>
+					</div>
+					<h4 class="selection-item__title">Электрическая печь DeLonghi 
+					EOI 406 CP Distinta</h4>
+					<p class="selection-item__desc">				
+						Стильная и утонченная электропечь DeLonghi EOI 406 CP выполнена в невероятно привлекательном дизайне.  
+					</p>
+					<span class="selection-item__price">45 599  руб.</span>
+					<div class="selection-item__btns">
+						<a href="#" class="btn selection-item__buy">Купить</a>
+						<a href="#" class="selection-item__more">Подробнее</a>
+					</div>
+				</div>
+				
+				<div class="selection-item">
+					<div class="selection-item__img">
+						<img src="assets/i/selection/selection8.png">
+						<span class="selection-item__bonus">
+							<b>+1200</b> бонусов
+						</span>
+					</div>
+					<h4 class="selection-item__title">Гриль DeLonghi CGH 912C</h4>
+					<p class="selection-item__desc">
+						Удачно совмещая простоту конструкции с весьма 
+						широким функционалом, электрогриль DeLonghi CGH 912C позволяет быстро приготовить любимое блюдо или разогреть уже имеющееся.
+					</p>
+					<span class="selection-item__price">16 999 руб.</span>
+					<div class="selection-item__btns">
+						<a href="#" class="btn selection-item__buy">Купить</a>
+						<a href="#" class="selection-item__more">Подробнее</a>
+					</div>
+				</div>
+	
+				<div class="selection-item">
+					<div class="selection-item__img">
+						<img src="assets/i/selection/selection9.png">
+						<span class="selection-item__bonus">
+							<b>+205</b> бонусов
+						</span>
+					</div>
+					<h4 class="selection-item__title">Аэрофритюрница DeLonghi 
+					FH 1100/1 MultiFry</h4>
+					<p class="selection-item__desc">
+						Если вы хотите разнообразить свой рацион вкусными и полезными блюдами – вам однозначно стоит купить аэрофритюрницу DeLonghi FH 1100/1 MultiFry
+					</p>
+					<span class="selection-item__price">25 159 руб.</span>
+					<div class="selection-item__btns">
+						<a href="#" class="btn selection-item__buy">Купить</a>
+						<a href="#" class="selection-item__more">Подробнее</a>
+					</div>
+				</div>
+	
+			</div>
+	
+		</div>
+	</section>
 
 <script src="assets/js/app.js"></script>
 </body>

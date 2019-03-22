@@ -8,7 +8,7 @@
     <title>DeLonghi</title>
 </head>
 
-<body>
+<body class="body_dark">
 	<!doctype html>
 	<html lang="ru">
 	
@@ -67,8 +67,8 @@
 			</nav>
 			<div class="container">
 				<h1 class="header__title">
-					Добро пожаловать <br>
-					в Coffee Club
+					Программа лояльности <br>
+					
 				</h1>
 			</div>
 			<nav class="main-nav container">
@@ -162,184 +162,167 @@
 			</nav>
 		</header>
 
-		
-		<section class="profile">
-			<div class="container">
-				<div class="profile-info">
-					<div class="profile-user">
-						<div class="profile-user__avatar" style="background-image: url(assets/i/user.png"></div>
-						<span class="profile-user__name">Иванов Иван</span>
-						<a href="#" class="btn profile-user__btn">Редактировать</a>
-					</div>
-					<div class="profile-contacts">
-						<h5 class="profile-contacts__title">Информация о профиле</h5>
-						<ul class="profile-contacts__list">
-							<li>
-								<img class="profile-contacts__icon" src="assets/i/icons/map-marker.svg">
-								улица Константиновская, 26, Киев, 02000
+	
+	<section class="profile profile_small">
+	    <div class="container">
+	        <div class="profile-info">
+	            <div class="profile-user">
+	                <div class="profile-user__avatar" style="background-image: url(assets/i/user.png"></div>
+	                <span class="profile-user__name">
+						<a href="#" class="profile-user__btn"><img src="assets/i/icons/logout.png" alt="Выход"></a>
+	                    Иванов Иван
+	            	</span>
+	            </div>
+	            <div class="profile-contacts">
+	                <a href="#" class="profile-contacts__edit">
+	                    <img src="assets/i/icons/pen.png" alt="Редактирование">
+	                    Редактировать профиль
+	                </a>
+	            </div>
+	        </div>
+	        <div class="bonus bonus_small">
+	            <span class="bonus__subtitle">У вас всего <span class="bonus__count">3000 бонусов</span></span>
+	            
+	            <a href="#" class="btn bonus__btn">Потратить бонусы</a>
+	        </div>
+	    </div>
+	</section>
+	
+	<section class="barista">
+		<div class="container">
+			<div class="barista__header">
+				<h2 class="barista__title">
+					УЗНАЙ, КАК ОТКРЫТЬ <span>СВОЮ КОФЕЙНЮ <br>
+					И СТАТЬ</span> ПРОФЕССИОНАЛЬНЫМ БАРИСТА
+				</h2>
+			</div>
+	
+			<div class="barista__content">
+				<p class="barista__paragraph">
+					От зеленых и обжаренных зерен до оборудования, интерьеров кофеен, ингредиентов, образовательных программ для бариста, Coffee Expo Seoul
+					демонстрирует всю кофейную индустрию под одной крышей.Выставка Coffee Expo Seoul организована Coex и Корейской Ассоциацией Кофе
+					и представляет собой идеальную бизнес площадку для всех, кто занят в индустрии кофе.  Coffee Expo Seoul 2019  пройдет с 11 по 14 апреля в Coex Halls A & B в Сеуле, Республика Корея и включит в себя зоны Шоу десертов и напитков, Mint Label (Демонстрация новой продукции), Marketing Stage (Презентация продукции/Пресс Конференции), и Мировой Чемпионат Бариста (World Super Barista Championships). 
+				</p>
+	
+				<h3 class="barista__subtitle">
+					СТАНЬ ПРОФЕССИОНАЛЬНЫМ БАРИСТА ЗА 1 ДЕНЬ
+				</h3>
+	
+				<ul class="barista__advantages">
+					<li>Получите бесценное знание о кофейном оборудовании</li>
+					<li>
+						Именной сертификат бариста, действующий в любой <br>
+						стране мира
+					</li>
+					<li>Научитесь вкусно готовить кофе</li>
+					<li>Все необходимое для того, чтобы открыть свою кофейню</li>
+					<li>Научитесь рисовать на кофе (изучите 7 стилей Латте-Арт)</li>
+					<li>
+						Узнаете как увеличить продажи в Вашей кофейне,фаст-фуде, <br>
+						кафе, ресторане
+					</li>
+				</ul>
+	
+				<p class="barista__paragraph">
+					От зеленых и обжаренных зерен до оборудования, интерьеров кофеен, ингредиентов, образовательных программ для бариста, Coffee Expo Seoul
+					демонстрирует всю кофейную индустрию под одной крышей.Выставка Coffee Expo Seoul организована Coex и Корейской Ассоциацией Кофе
+					и представляет собой идеальную бизнес площадку для всех, кто занят в индустрии кофе.  Coffee Expo Seoul 2019  пройдет с 11 по 14 апреля в Coex Halls A & B в Сеуле, Республика Корея и включит в себя зоны Шоу десертов и напитков, Mint Label (Демонстрация новой продукции), Marketing Stage (Презентация продукции/Пресс Конференции), и Мировой Чемпионат Бариста (World Super Barista Championships). 
+				</p>
+	
+				<h3 class="barista__subtitle">
+					ТРЕНИНГИ БАРИСТА
+				</h3>
+	
+				<ul class="barista-tariffs">
+					<li class="barista-tariffs__item">
+						<h4 class="barista-tariffs__name">Базовый</h4>
+						<span class="barista-tariffs__price">Бесплатно</span>
+						<ul class="barista-tariffs__list">
+							<li class="act">
+								&#8226; Происхождение кофе и разновидности <br>
+								кофейных зерен Арабики и Робусты
+							</li>
+							<li class="act">
+								&#8226; Особенности степени обжарки кофе
 							</li>
 							<li>
-								<img class="profile-contacts__icon" src="assets/i/icons/telephone.svg">
-								+ 7 (902) 568 58 98
+								&#8226; Теория по правилам приготовления <br>
+								кофейных напитков
 							</li>
 							<li>
-								<img class="profile-contacts__icon" src="assets/i/icons/envelope.svg">
-								E-mail@mail.ru
+								&#8226; Виды кофе-машин и кофемолок
+							</li>
+							<li>
+								&#8226; В чем особенность профессиональных кофе-машин и кофемолок
+							</li>
+							<li>
+								&#8226; Основные узлы кофе-машины и кофе-молки. Их назначение
 							</li>
 						</ul>
-					</div>
-				</div>
-				<div class="bonus">
-					<h5 class="bonus__title">Накопленные бонусы</h5>
-					<span class="bonus__subtitle">У вас всего</span>
-					<span class="bonus__count">3000</span>
-					<a href="#" class="btn bonus__btn">Проверить</a>
-				</div>
-				
-			</div>
-		</section>
+						<a href="#" class="btn barista-tariffs__btn">Купить</a>
+					</li>
 	
-		<section class="offers">
-			<div class="container">
-				<h2 class="section-title">Специальные предложения</h2>
-				<div class="offers__list">
-					<div class="offers__item">
-						<img src="assets/i/offers/1.png" class="offers__img img-fluid">
-						<h4 class="offers__title">Подарки за баллы</h4>
-						<p class="offers__desc">
-							Спецпредложения оставляем. <br>
-							Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн курсы с возможностью проскролить то что внутри этих блоков есть
-						</p>
-						<a href="#" class="btn offers__btn">Подробнее</a>
-					</div>
+					<li class="barista-tariffs__item barista-tariffs__item_main">
+						<h4 class="barista-tariffs__name">Средний</h4>
+						<span class="barista-tariffs__price">3000 бонусов</span>
+						<ul class="barista-tariffs__list">
+							<li class="act">
+								&#8226; Происхождение кофе и разновидности <br>
+								кофейных зерен Арабики и Робусты
+							</li>
+							<li class="act">
+								&#8226; Особенности степени обжарки кофе
+							</li>
+							<li class="act">
+								&#8226; Теория по правилам приготовления <br>
+								кофейных напитков
+							</li>
+							<li class="act">
+								&#8226; Виды кофе-машин и кофемолок
+							</li>
+							<li>
+								&#8226; В чем особенность профессиональных кофе-машин и кофемолок
+							</li>
+							<li>
+								&#8226; Основные узлы кофе-машины и кофе-молки. Их назначение
+							</li>
+						</ul>
+						<a href="#" class="btn barista-tariffs__btn">Купить</a>
+					</li>
 	
-					<div class="offers__item">
-						<img src="assets/i/offers/2.png" class="offers__img img-fluid">
-						<h4 class="offers__title">Мероприятия</h4>
-						<p class="offers__desc">
-							Спецпредложения оставляем. <br>
-							Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн
-						</p>
-						<a href="#" class="btn offers__btn">Подробнее</a>
-					</div>
-	
-					<div class="offers__item">
-						<img src="assets/i/offers/3.png" class="offers__img img-fluid">
-						<h4 class="offers__title">Онлайн курсы</h4>
-						<p class="offers__desc">
-							Спецпредложения оставляем. <br>
-							Нужно сделать визуальные 3 подблока: подарки за баллы, мероприятия, онлайн курсы с возможностью проскролить то что внутри этих блоков есть
-						</p>
-						<a href="#" class="btn offers__btn">Подробнее</a>
-					</div>
-	
-				</div>
-			</div>
-		</section>
-		
-		<section class="recommended container">
-			<h2 class="section-title">Рекомендованные товары</h2>
-			<div class="recommended-list">
-				<!-- <button class="recommended-list__arrow"><i class="fas fa-long-arrow-alt-left"></i></button> -->
-				<div id="recommendedSlider" class="recommended-list__slider">
-					<div class="recommended-list__item">
-						<div class="recommended-list__img">
-							<img class="img-fluid" src="assets/i/recommended/1.png">
-						</div>
-					</div>
-					<div class="recommended-list__item">
-						<div class="recommended-list__img">
-							<img class="img-fluid" src="assets/i/recommended/2.png">
-						</div>
-					</div>
-					<div class="recommended-list__item">
-						<div class="recommended-list__img">
-							<img class="img-fluid" src="assets/i/recommended/3.png">
-						</div>
-					</div>
-					<div class="recommended-list__item">
-						<div class="recommended-list__img recommended-list__item_act">
-							<img class="img-fluid" src="assets/i/recommended/4.png">
-						</div>
-					</div>
-				</div>
-			</div>
-	
-			<div class="recommended-show">
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
-					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер1 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga facilis suscipit amet nisi laboriosam! Quidem consectetur cupiditate sed dolorem iusto.
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
-					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер2 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nulla nam debitis enim expedita libero, nobis excepturi qui. Excepturi itaque, esse nostrum nesciunt consequuntur distinctio. Ducimus ab architecto dolor laudantium!
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
-					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер3 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum officia minus quos tempora natus nulla laborum vel velit voluptates, suscipit neque ab eius maxime modi odio nisi atque cupiditate facere eligendi. Omnis, amet. Quisquam, atque dolorem dolores deleniti ducimus quae?
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<div class="recommended-show__item">
-					<div class="recommended-show__img">
-						<img src="assets/i/recommended/prew.png">
-					</div>
-					<div class="recommended-show__info">
-						<h5 class="recommended-show__name">Тостер4 <span>CTI2103.CP</span></h5>
-						<div class="recommended-show__wrap">
-							<p class="recommended-show__desc">
-								нужен для очистки вашей кофемашины или чайника, кофе идеально подойдет для приготовления кофе в кофемашины
-							</p>
-							<div class="recommended-show__pay">
-								<span class="recommended-show__price">5 190 руб.</span>
-								<span class="recommended-show__bonus">30 бонусов</span>
-							</div>
-						</div>
-					</div>
-				</div>
+					<li class="barista-tariffs__item">
+						<h4 class="barista-tariffs__name">Максимальный</h4>
+						<span class="barista-tariffs__price">4 000 бонусов</span>
+						<ul class="barista-tariffs__list">
+							<li class="act">
+								&#8226; Происхождение кофе и разновидности <br>
+								кофейных зерен Арабики и Робусты
+							</li>
+							<li class="act">
+								&#8226; Особенности степени обжарки кофе
+							</li>
+							<li class="act">
+								&#8226; Теория по правилам приготовления <br>
+								кофейных напитков
+							</li>
+							<li class="act">
+								&#8226; Виды кофе-машин и кофемолок
+							</li>
+							<li class="act">
+								&#8226; В чем особенность профессиональных кофе-машин и кофемолок
+							</li>
+							<li class="act">
+								&#8226; Основные узлы кофе-машины и кофе-молки. Их назначение
+							</li>
+						</ul>
+						<a href="#" class="btn barista-tariffs__btn">Купить</a>
+					</li>
+				</ul>
 	
 			</div>
-		</section>
+		</div>
+	</section>
+	
 
 <script src="assets/js/app.js"></script>
 </body>
