@@ -261,4 +261,8 @@ $(document).ready(function() {
 	      $('#filter-course').selectmenu({
 	        'placeholder': 'Интересным'
 	    });
+	$('.certificates-help').on('click', function(e) {
+			e.preventDefault();
+			$('.certificates-help__info').toggleClass('certificates-help_show');
+		});
 });

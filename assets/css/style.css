@@ -7274,7 +7274,6 @@ input[type=text] {
     height: 50px;
     line-height: 50px;
     padding: 20px 15px;
-    width: 100%;
     color: #fff;
     border-radius: 5px;
     border: none;
@@ -10371,6 +10370,11 @@ ul, li {
     cursor: pointer;
     background-color: transparent;
     border: none;
+    margin-left: 10px;
+}
+
+.edit-form__btn_save:hover {
+    background-color: transparent;
 }
 
 .ui-selectmenu-button.ui-button {
@@ -10627,7 +10631,7 @@ ul, li {
     font-weight: 300;
 }
 
-.certificates-head__help {
+.certificates-help {
     padding: 0;
     padding-bottom: 3px;
     -webkit-align-self: center;
@@ -10640,6 +10644,65 @@ ul, li {
     font-size: 14px;
     font-weight: 300;
     cursor: pointer;
+    position: relative;
+}
+
+.certificates-help::before {
+    background: url(../i/icons/help-icon.png) no-repeat center center;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    width: 8px;
+    height: 4px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.certificates-help__info {
+    padding: 26px 38px 20px 38px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: -17px;
+    -webkit-transform: translate(-50%, 100%);
+    -ms-transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%);
+    background-color: #0d2643;
+    width: 297px;
+    border-radius: 11px;
+}
+
+.certificates-help__info::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12px 10px 12px;
+    border-color: transparent transparent #0d2645 transparent;
+}
+
+.certificates-help__text {
+    margin: 0;
+    color: #fdfdfd;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: left;
+}
+
+.certificates-help__img {
+    margin: 20px 0;
+    width: 100%;
+    height: auto;
+}
+
+.certificates-help_show {
+    display: block;
 }
 
 .certificates-item {
@@ -10797,7 +10860,7 @@ ul, li {
         flex-wrap: wrap;
     }
 
-    .certificates-head__help {
+    .certificates-help {
         margin-top: 10px;
     }
 
@@ -10825,12 +10888,12 @@ ul, li {
         flex-wrap: wrap;
     }
 
-    .certificates-head__help {
-        margin-top: 10px;
-    }
-
     .certificates-head input {
         margin-bottom: 20px;
+    }
+
+    .certificates-help {
+        margin-top: 10px;
     }
 
     .certificates-list__header {
@@ -10960,7 +11023,7 @@ ul, li {
         margin-right: 0;
     }
 
-    .certificates-head__help {
+    .certificates-help {
         margin: 0 auto;
     }
 
@@ -11389,6 +11452,7 @@ ul, li {
 }
 
 .activity-item {
+    display: block;
     width: 24%;
     border-radius: 10px;
     background-repeat: no-repeat;
