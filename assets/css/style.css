@@ -7186,6 +7186,140 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner {
 }
 
 @font-face {
+    font-family: 'icomoon';
+  src: url("../fonts/icon/icomoon.eot?t3etze");
+  src: url("../fonts/icon/icomoon.eot?t3etze#iefix") format("embedded-opentype"), url("../fonts/icon/icomoon.ttf?t3etze") format("truetype"), url("../fonts/icon/icomoon.woff?t3etze") format("woff"), url("../fonts/icon/icomoon.svg?t3etze#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-angle-arrow-down:before {
+    content: "\e900";
+}
+
+.icon-bag:before {
+    content: "\e901";
+}
+
+.icon-calendar:before {
+    content: "\e902";
+}
+
+.icon-catalog:before {
+    content: "\e903";
+}
+
+.icon-chat:before {
+    content: "\e904";
+}
+
+.icon-check:before {
+    content: "\e905";
+}
+
+.icon-checked:before {
+    content: "\e906";
+}
+
+.icon-delivery:before {
+    content: "\e907";
+}
+
+.icon-edit-photo:before {
+    content: "\e908";
+}
+
+.icon-envelope:before {
+    content: "\e909";
+}
+
+.icon-heart-shape-silhouette:before {
+    content: "\e90a";
+}
+
+.icon-home:before {
+    content: "\e90b";
+}
+
+.icon-info:before {
+    content: "\e90c";
+}
+
+.icon-light-bulb:before {
+    content: "\e90d";
+}
+
+.icon-map-marker:before {
+    content: "\e90e";
+}
+
+.icon-paper-clip:before {
+    content: "\e90f";
+}
+
+.icon-pencil-edit-button:before {
+    content: "\e910";
+}
+
+.icon-percentage-1:before {
+    content: "\e911";
+}
+
+.icon-present:before {
+    content: "\e912";
+}
+
+.icon-price:before {
+    content: "\e913";
+}
+
+.icon-rating:before {
+    content: "\e914";
+}
+
+.icon-search:before {
+    content: "\e915";
+}
+
+.icon-serch:before {
+    content: "\e916";
+}
+
+.icon-star:before {
+    content: "\e917";
+}
+
+.icon-star2:before {
+    content: "\e918";
+}
+
+.icon-telephone-handle-silhouette:before {
+    content: "\e919";
+}
+
+.icon-ticket:before {
+    content: "\e91a";
+}
+
+.icon-time:before {
+    content: "\e91b";
+}
+
+@font-face {
     font-family: "Montserrat";
   font-weight: 400;
   font-style: normal;
@@ -7592,12 +7726,17 @@ ul, li {
     margin-right: 27px;
 }
 
-.header-info__rate i {
+.header-info__rate img {
+    width: 20px;
+    height: 20px;
+    width: 20px;
+    height: 18px;
     margin-right: 9px;
 }
 
 .header-info__buy {
     margin-right: 27px;
+    font-size: 20px;
 }
 
 .header-info__buy i {
@@ -7637,6 +7776,18 @@ ul, li {
     fill: #fff;
 }
 
+.main-nav .icon-ticket {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.main-nav .icon-heart-shape-silhouette, .main-nav .icon-star2 {
+    margin-bottom: 13px;
+}
+
 .main-nav__link {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -7667,7 +7818,7 @@ ul, li {
 }
 
 .main-nav__link i {
-    font-size: 18px;
+    font-size: 20px;
     display: block;
     margin-bottom: 20px;
 }
@@ -7827,7 +7978,7 @@ ul, li {
     }
 
     .main-nav__link:nth-child(4) i {
-        margin-bottom: 3px;
+          /* margin-bottom: 3px; */
     }
 
     .main-nav__link:nth-child(5) {
@@ -7835,7 +7986,16 @@ ul, li {
     }
 
     .main-nav__link:nth-child(5) i {
-        margin-bottom: 3px;
+          /* margin-bottom: 3px; */
+    }
+
+    .main-nav__link i {
+        font-size: 16px;
+    }
+
+    .main-nav__link .icon-ticket {
+        font-size: 18px;
+        margin-bottom: 13px;
     }
 }
 
