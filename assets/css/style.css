@@ -10869,6 +10869,7 @@ ul, li {
 }
 
 .certificates-help__info {
+    z-index: 9999;
     padding: 26px 38px 20px 38px;
     display: none;
     position: absolute;
@@ -13392,4 +13393,116 @@ ul, li {
 
 .edit-profile_info .search__btns {
     margin-top: 10px;
+}
+
+.search-product .section-head {
+    margin-bottom: 35px;
+}
+
+.search-product .section-head_course {
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+}
+
+.search-product .certificates-help {
+    margin-top: 0;
+}
+
+.search-product .certificates-item:last-child {
+    padding-bottom: 0;
+}
+
+.search-product .certificates-list__header {
+    padding-right: 30px;
+}
+
+.search-product .certificates-list__header .certificates-item__series, .search-product .certificates-list__header .certificates-item__description {
+    font-size: 14px !important;
+}
+
+.search-product .certificates-item__description {
+    text-align: right;
+    width: 30%;
+}
+
+.search-product .certificates-item__series {
+    width: 20%;
+}
+
+.search-product .certificates-item__product {
+    width: 50%;
+}
+
+.search-product .certificates-item__product-wrap {
+    position: relative;
+}
+
+.search-product .certificates-item__name, .search-product .certificates-item__series, .search-product .certificates-item__description, .search-product .certificates-item__text {
+    font-size: 18px;
+}
+
+.search-product .certificates-item__radio {
+    display: none;
+}
+
+.search-product .certificates-item__radio-btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.search-product .certificates-item__radio-btn::before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 3.5px);
+    top: calc(50% - 3.5px);
+    width: 7px;
+    height: 7px;
+    background-color: #8b9198;
+    border-radius: 50%;
+}
+
+.search-product .certificates-item__radio-btn_act::before {
+    height: 11px;
+    width: 11px;
+    left: calc(50% - 5.5px);
+    top: calc(50% - 5.5px);
+    background-color: #59b1e3;
+}
+
+.search-product .certificates-item__img_border {
+    border: 1px solid #59b1e3;
+}
+
+@media screen and (max-width: 991px) {
+    .search-product .certificates-item__series, .search-product .certificates-item__description {
+        width: 100%;
+    }
+
+    .search-product .certificates-item__product {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .search-product .container {
+        padding-top: 33px;
+        padding-bottom: 28px;
+    }
+
+    .search-product .search__btns {
+        margin-top: 20px;
+    }
+
+    .search-product .section-head_course {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 }

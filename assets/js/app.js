@@ -261,8 +261,28 @@ $(document).ready(function() {
 	      $('#filter-course').selectmenu({
 	        'placeholder': 'Интересным'
 	    });
+	
+	    $('#filter-product').selectmenu({
+	        'placeholder': 'Популярным'
+	    });
 	$('.certificates-help').on('click', function(e) {
 			e.preventDefault();
 			$('.certificates-help__info').toggleClass('certificates-help_show');
 		});
+	let radio = $('.certificates-item__radio');
+	let radioBtn = $('.certificates-item__radio-btn');
+	let img = $('.certificates-item__img');
+	
+	radio.on('change', actProduct);
+	
+	function actProduct() {
+		for (var i = 0; i < radio.length; i++) {
+			$(img[i]).removeClass('certificates-item__img_border');
+			$(radioBtn[i]).removeClass('certificates-item__radio-btn_act');
+			if (radio[i].checked == true) {
+				$(img[i]).addClass('certificates-item__img_border');
+				$(radioBtn[i]).addClass('certificates-item__radio-btn_act');
+			}
+		}
+	}
 });
