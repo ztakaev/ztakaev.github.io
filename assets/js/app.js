@@ -265,6 +265,10 @@ $(document).ready(function() {
 	    $('#filter-product').selectmenu({
 	        'placeholder': 'Популярным'
 	    });
+	
+	    $('#filter-loc-buy').selectmenu({
+	        'placeholder': 'Выберете где купили'
+	    });
 	$('.certificates-help').on('click', function(e) {
 			e.preventDefault();
 			$('.certificates-help__info').toggleClass('certificates-help_show');
@@ -285,4 +289,9 @@ $(document).ready(function() {
 			}
 		}
 	}
+	$('#file').on('change', function () {
+		if ($('#file')[0]['files'].length == 1) {
+			$('.file__status').html($('#file')[0]['files'][0]['name']);
+		}
+	});
 });
